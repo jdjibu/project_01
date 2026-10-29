@@ -20,6 +20,7 @@ UA = {"User-Agent": "project_01 student research (non-commercial)"}
 MAKITA_IR = "https://www.makita.biz/ir/upload_file"
 RELEASES = ["201903e", "202003e"] + [f"financial_results{y}03" for y in range(2021, 2027)] + \
            ["financial_results202503-2", "financial_results202506", "financial_results202606"]
+REPORTS = ["makita_report_view2025e", "makita_report_view2026e"]  # integrated reports; >100MB, gitignored
 FS = ["201903cfs", "202003cfs", "202103cfs", "202203cfs", "202303cfs", "202403cfs", "202503cfs2", "202603cfs"]
 
 TICKER = "6586.T"
@@ -99,6 +100,8 @@ def main():
             download(f"{MAKITA_IR}/m005-m005_02/{f}.pdf", f"makita/releases/{f}.pdf")
         for f in FS:
             download(f"{MAKITA_IR}/m005-m005_03/{f}.pdf", f"makita/fs/{f}.pdf")
+        for f in REPORTS:
+            download(f"{MAKITA_IR}/m005-m005_05/{f}.pdf", f"makita/reports/{f}.pdf")
     for rel, url in MACRO.items():
         download(url, rel)
     yf_save(TICKER, "market", fundamentals=True)

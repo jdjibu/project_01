@@ -78,6 +78,10 @@ def main():
         c = f"FY{fy}"
         e = g[g.item == "external_revenue"].set_index("segment")["value"]
         o = g[g.item == "operating_profit"].set_index("segment")["value"]
+        tot = g[g.item == "total_revenue"].set_index("segment")["value"]
+        itr = g[g.item == "intersegment_revenue"].set_index("segment")["value"]
+        for sg in ["Japan", "Europe", "North America", "Asia", "Other"]:
+            chk(f"Segments: {sg} total = external + inter-segment", c, tot.get(sg, 0.0), e[sg] + itr[sg])
         chk("Segments: external revenue sums to consolidated", c, e[["Subtotal", "Other", "Eliminations"]].sum(), e["Consolidated"])
         chk("Segments: consolidated = IS revenue", c, e["Consolidated"], IS.at["revenue", c])
         chk("Segments: OP sums to consolidated", c, o[["Subtotal", "Other", "Eliminations"]].sum(), o["Consolidated"])

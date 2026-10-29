@@ -4,3 +4,6 @@ __pycache__/
 .venv/
 ~$*.xlsx
 .DS_Store
+
+# large integrated reports (100MB+): downloaded by src/fetch_data.py, not committed
+data/raw/makita/reports/
