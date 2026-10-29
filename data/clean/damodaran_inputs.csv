@@ -1,0 +1,17 @@
+item,value,source
+Japan Moody's rating,A1,ctryprem.xlsx / ERPs by country
+Japan rating-based default spread,0.005992926445154621,ctryprem.xlsx / ERPs by country
+Japan total ERP (rating-based),0.051429493090927994,ctryprem.xlsx / ERPs by country
+Japan country risk premium (rating-based),0.009129493090928,ctryprem.xlsx / ERPs by country
+Mature market ERP (= Japan total ERP - Japan CRP),0.04229999999999999,derived
+"US implied ERP (FCFE), start of 2026",0.0423,"histimpl.xls, year-end row"
+Japan Machinery: levered beta,1.2425147819087314,betaJapan.xls
+Japan Machinery: D/E,0.17667185021274007,betaJapan.xls
+Japan Machinery: unlevered beta,1.1053127108568217,betaJapan.xls
+Japan Machinery: unlevered beta corrected for cash,1.266255080606733,betaJapan.xls
+Japan Machinery: number of firms,221,betaJapan.xls
+Global Machinery: levered beta,1.3694737580048848,betaGlobal.xls
+Global Machinery: D/E,0.13555693354095483,betaGlobal.xls
+Global Machinery: unlevered beta,1.2436577087492953,betaGlobal.xls
+Global Machinery: unlevered beta corrected for cash,1.329621716102589,betaGlobal.xls
+Global Machinery: number of firms,1553,betaGlobal.xls

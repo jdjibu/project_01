@@ -1,0 +1,5 @@
+ticker,fy_end,item,yfinance_usd,sec_usd,sec_concept,sec_accession,pct_diff
+SWK,2025-12-31,revenue,15130400000.0,15130400000,Revenues,0000093556-26-000009,0.0
+SWK,2025-12-31,net_income,401900000.0,401900000,NetIncomeLoss,0000093556-26-000009,0.0
+TTC,2025-10-31,revenue,4510400000.0,4510400000,RevenueFromContractWithCustomerExcludingAssessedTax,0000737758-25-000115,0.0
+TTC,2025-10-31,net_income,316100000.0,316100000,NetIncomeLoss,0000737758-25-000115,0.0

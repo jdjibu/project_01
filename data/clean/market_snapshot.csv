@@ -1,0 +1,19 @@
+item,value,source
+valuation_date,2026-10-29,close date used
+price_close_jpy,5253.0,yfinance 6586.T
+price_date,2026-10-29,yfinance 6586.T
+high_52w_close,6106.0,computed from daily closes
+low_52w_close,4203.0,computed from daily closes
+high_52w_intraday,6130.0,computed from daily highs
+low_52w_intraday,4175.0,computed from daily lows
+avg_daily_value_traded_3m_jpy_m,4676.113352380953,computed
+shares_outstanding_30jun2026,257655511.0,1Q FY3/2027 release: issued - treasury
+shares_outstanding_yfinance,257655822,yfinance info (cross-check)
+market_cap_jpy_m,1353464.399283,price x filing shares
+cash_30jun2026_jpy_m,256364.0,1Q FY3/2027 BS
+other_fin_assets_cur_30jun2026_jpy_m,27921.0,1Q BS: mainly time deposits
+borrowings_30jun2026_jpy_m,1604.0,1Q BS
+other_fin_liab_30jun2026_jpy_m,20378.0,1Q BS: mainly lease liabilities (IFRS 16)
+nci_30jun2026_jpy_m,7432.0,1Q BS
+usdjpy_on_val_date,157.82000732421875,yfinance JPY=X
+eurjpy_on_val_date,176.0330047607422,yfinance EURJPY=X
