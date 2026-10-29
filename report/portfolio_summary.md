@@ -1,5 +1,7 @@
 # Portfolio summary
 
+James Pieter Djibu · BSc Economics, Nagoya University (Class of 2028)
+
 ## Card version (110 words)
 **Makita (6586 JP): initiation of coverage**
 
@@ -25,4 +27,5 @@ traceable to its source.
 | Finding | HOLD, 12-month TP JPY 5,850 (+11.4%); margins recovered, growth is FX-driven, downside limited by JPY 269bn net cash |
 | Methods | Three-statement model, driver-based DCF (CAPM WACC 8.84%, value-driver terminal value), trading comps, scenario and risk sensitivities |
 | Tools | Python (pandas, openpyxl, xlsxwriter, matplotlib, reportlab), LibreOffice headless, yfinance, Vite |
+| Author | James Pieter Djibu · [LinkedIn](https://www.linkedin.com/in/james-pieter-djibu-1490b2244/) · jamespieter16@gmail.com |
 | Links | Report PDF: `report/Makita_6586_initiation.pdf` · Model: `model/Makita_6586_model.xlsx` · Code: https://github.com/jdjibu/project_01 · Website: your Vercel URL after deploying `web/` |
