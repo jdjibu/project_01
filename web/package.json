@@ -1,0 +1,15 @@
+{
+  "name": "makita-initiation-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive companion site for the Makita (6586 JP) student initiation report",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "6.4.3"
+  }
+}

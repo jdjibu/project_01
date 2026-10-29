@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makita 6586 JP: Initiation</title>
+  <meta name="description" content="Student initiation of coverage on Makita Corporation (6586 JP): HOLD, 12-month target price, driver-based DCF, comps and risks. Not investment advice." />
+  <meta property="og:title" content="Makita (6586 JP): Initiation of coverage" />
+  <meta property="og:description" content="Great franchise, fairly priced. Student equity research project with a live-formula Excel model and reproducible data pipeline." />
+  <meta name="theme-color" content="#0A0A09" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__mark" href="#top" aria-label="Back to top"><span class="mono">6586</span><span class="nav__name">Makita</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Sections">
+        <a href="#thesis">Thesis</a>
+        <a href="#numbers">Numbers</a>
+        <a href="#valuation">Valuation</a>
+        <a href="#risks">Risks</a>
+        <a href="#method">Method</a>
+        <a class="nav__cta" href="/downloads/Makita_6586_initiation.pdf" target="_blank" rel="noopener">Report</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span class="sr">Menu</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__light" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Initiation of coverage &middot; <span data-bind="market.price_date" data-fmt="date"></span> &middot; Student research</p>
+          <h1 class="hero__title mask" aria-label="Makita Corporation">
+            <span><span>Makita</span></span><span><span>Corporation</span></span>
+          </h1>
+          <p class="hero__tag reveal">Great franchise, fairly priced. The margin recovery is done; recent growth came from the yen.</p>
+          <div class="hero__ctas reveal">
+            <a class="btn magnet" href="/downloads/Makita_6586_initiation.pdf" target="_blank" rel="noopener">Read the report <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+            <a class="btn btn--ghost magnet" href="/downloads/Makita_6586_model.xlsx" download>Excel model</a>
+          </div>
+          <p class="hero__note reveal">6586 JP &middot; IFRS &middot; JPY &middot; FY ends 31 March. Not investment advice.</p>
+        </div>
+
+        <aside class="panel reveal" aria-label="Rating and target price">
+          <div class="panel__head">
+            <span class="badge" id="ratingBadge" data-bind="rating"></span>
+            <div class="seg" role="group" aria-label="Scenario">
+              <button type="button" data-scen="Bear">Bear</button>
+              <button type="button" data-scen="Base" aria-pressed="true">Base</button>
+              <button type="button" data-scen="Bull">Bull</button>
+            </div>
+          </div>
+          <p class="label">12-month target price</p>
+          <p class="panel__tp"><span class="yen">¥</span><span data-count="tp">0</span></p>
+          <div class="panel__row">
+            <div><p class="label">Upside</p><p class="panel__fig" data-count="upside" data-fmt="pct">0</p></div>
+            <div><p class="label">Total return</p><p class="panel__fig" data-count="tsr" data-fmt="pct">0</p></div>
+            <div><p class="label">Price</p><p class="panel__fig">¥<span data-bind="price" data-fmt="int"></span></p></div>
+          </div>
+          <div class="gauge" id="gauge" aria-hidden="true"></div>
+          <p class="panel__foot">Fair value today ¥<span data-bind="fv" data-fmt="int"></span> &middot; WACC <span data-bind="wacc" data-fmt="pct2"></span> &middot; rule: Buy &gt; +15%, Sell &lt; -10%</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="band" aria-label="Key figures">
+      <div class="band__track" id="band"></div>
+    </section>
+
+    <!-- THESIS -->
+    <section class="section" id="thesis">
+      <div class="container">
+        <p class="eyebrow reveal">01 &middot; Investment thesis</p>
+        <h2 class="h2 mask"><span><span>Three reasons to hold, not chase</span></span></h2>
+        <p class="lede reveal">Makita owns one of the strongest battery-tool platforms in the world and a fortress balance sheet. The price already reflects the recovery.</p>
+        <div class="bento">
+          <article class="card card--lg reveal spot">
+            <div class="chart chart--mini" id="chCard" aria-label="Gross margin and SG&amp;A as % of revenue, FY2018-26"></div>
+            <p class="card__num">I</p>
+            <h3>The margin recovery is complete; the next leg needs cost discipline</h3>
+            <p>Gross margin is back to <b class="f" data-fact="gross_margin"></b>, close to FY2018's <b class="f" data-fact="gross_margin_18"></b>. The gap to the <b class="f" data-fact="target_margin"></b> operating-margin target is overhead: SG&amp;A rose from <b class="f" data-fact="sga_18"></b> to <b class="f" data-fact="sga_26"></b> of sales while the sales force grows.</p>
+          </article>
+          <article class="card reveal spot">
+            <p class="card__num">II</p>
+            <h3>Growth is currency, not volume</h3>
+            <p>Europe is <b class="f" data-fact="europe_share"></b> of sales and shrank <b class="f" data-fact="europe_lc_26"></b> in local currency in FY2026. 1Q FY2027 revenue rose <b class="f" data-fact="q1_jpy"></b> in yen but was flat in local currency, while Milwaukee grew <b class="f" data-fact="milwaukee"></b>.</p>
+          </article>
+          <article class="card reveal spot">
+            <p class="card__num">III</p>
+            <h3>The balance sheet is the lever</h3>
+            <p>Net cash of <b class="f" data-fact="net_cash"></b> caps ROE at <b class="f" data-fact="roe"></b> against an <b class="f" data-fact="target_roe"></b> target. The stock trades on <b class="f" data-fact="ev_ebitda"></b> EV/EBITDA, below its own <b class="f" data-fact="own_med"></b> median: limited downside, buybacks are the trigger.</p>
+          </article>
+          <article class="card card--wide reveal spot">
+            <p class="card__num">&#8644;</p>
+            <h3>What would make me wrong</h3>
+            <div class="wrong">
+              <div><p class="label label--up">Turn to Buy</p><p>Operating margin heads to 15% without giving up growth; a sustained ~10% weaker yen; large buybacks lifting ROE toward 11%.</p></div>
+              <div><p class="label label--down">Turn to Sell</p><p>A second inventory cycle: inventory days above 300, European local-currency sales falling more than 3%, gross margin back to 34-35%.</p></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="section section--alt" id="numbers">
+      <div class="container">
+        <p class="eyebrow reveal">02 &middot; Nine years of IFRS numbers</p>
+        <h2 class="h2 mask"><span><span>What the numbers say</span></span></h2>
+        <p class="lede reveal">Parsed from Makita's own filings, checked by <b class="f" data-fact="data_checks"></b> accounting tests. Hover any chart for values.</p>
+
+        <div class="chart-grid">
+          <figure class="fig reveal">
+            <figcaption><h3>Revenue and margins</h3><p>Revenue grew every year but one; operating margin is still below the FY2018 level.</p></figcaption>
+            <div class="chart" id="chRevenue"></div>
+            <div class="chart chart--short" id="chMargins"></div>
+            <p class="src">Source: Makita earnings releases (IFRS). JPY bn; margins in %.</p>
+          </figure>
+          <figure class="fig reveal">
+            <figcaption><h3>The inventory cycle</h3><p>Inventory peaked at <b class="f" data-fact="dio_22"></b> before the FY2023 margin collapse; it is <b class="f" data-fact="dio"></b> again.</p></figcaption>
+            <div class="chart" id="chInventory"></div>
+            <div class="chart chart--short" id="chOpm"></div>
+            <p class="src">Source: Makita earnings releases. Year-end inventory / cost of sales x 365.</p>
+          </figure>
+          <figure class="fig reveal">
+            <figcaption><h3>Where the revenue comes from</h3><p>Europe <b class="f" data-fact="europe_share"></b>, North America only <b class="f" data-fact="na_share"></b>.</p></figcaption>
+            <div class="chart" id="chRegion"></div>
+            <p class="src">Source: Makita earnings releases, revenue by customer location.</p>
+          </figure>
+          <figure class="fig reveal">
+            <figcaption><h3>Returns</h3><p>ROIC <b class="f" data-fact="roic"></b>, ROE <b class="f" data-fact="roe"></b>: surplus equity dilutes returns.</p></figcaption>
+            <div class="chart" id="chReturns"></div>
+            <p class="src">Source: student analysis of Makita filings; DuPont on average parent equity.</p>
+          </figure>
+        </div>
+
+        <ol class="insights">
+          <li class="reveal"><span>01</span><p><b>Over the cycle, only <b class="f" data-fact="fcf_conv"></b> of profit became free cash.</b> Inventory and capex absorbed the rest; a DCF that assumes full conversion overvalues Makita.</p></li>
+          <li class="reveal"><span>02</span><p><b>The aftermarket is the quiet moat.</b> Parts, repairs and accessories rose from <b class="f" data-fact="aftermarket_18"></b> to <b class="f" data-fact="aftermarket"></b> of revenue: an installed base that keeps buying.</p></li>
+          <li class="reveal"><span>03</span><p><b>Supply chain is still China-heavy.</b> <b class="f" data-fact="china_share"></b> of units are made in China, down from about 70%, which keeps US tariffs a live risk.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VALUATION -->
+    <section class="section" id="valuation">
+      <div class="container">
+        <p class="eyebrow reveal">03 &middot; Valuation</p>
+        <h2 class="h2 mask"><span><span>Two DCFs that agree, a little above the market</span></span></h2>
+        <p class="lede reveal">Driver-based DCF from 1 July 2026, mid-period discounting, value-driver terminal value. The exit multiple is set so both terminal methods agree. Peers trade on higher multiples, but they grow faster and earn more.</p>
+
+        <div class="val-grid">
+          <div class="card reveal">
+            <h3>Cost of capital</h3>
+            <table class="table" id="tWacc"></table>
+          </div>
+          <div class="card reveal">
+            <h3>From cash flows to a target price</h3>
+            <table class="table" id="tDcf"></table>
+          </div>
+        </div>
+
+        <figure class="fig reveal">
+          <figcaption><h3>Football field</h3><p>JPY per share. Gold: DCF; blue: multiples; grey: 52-week range. Line: price. Dashed: target.</p></figcaption>
+          <div class="chart chart--ff" id="chFootball"></div>
+          <p class="src">Source: student model (Football sheet); peers from yfinance, converted to JPY.</p>
+        </figure>
+
+        <div class="val-grid">
+          <figure class="card reveal">
+            <h3>Sensitivity: WACC vs terminal growth</h3>
+            <p class="muted">DCF (Gordon) value per share, JPY. Gold cell = base.</p>
+            <div class="heat" id="heat"></div>
+          </figure>
+          <figure class="card reveal">
+            <h3>Peers</h3>
+            <p class="muted">Last reported fiscal year; multiples recomputed in JPY.</p>
+            <div class="scroll"><table class="table" id="tPeers"></table></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- RISKS -->
+    <section class="section section--alt" id="risks">
+      <div class="container">
+        <p class="eyebrow reveal">04 &middot; Risks and catalysts</p>
+        <h2 class="h2 mask"><span><span>Margins matter more than the yen</span></span></h2>
+        <p class="lede reveal">Each bar re-runs the full Excel model with one driver shocked. A 200bp gross-margin slip is worth more than three times a 10% yen move.</p>
+        <figure class="fig reveal">
+          <div class="chart chart--tornado" id="chTornado"></div>
+          <p class="src">Change in 12-month target price, JPY per share. Source: src/risks.py.</p>
+        </figure>
+        <div class="timeline reveal" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section class="section" id="method">
+      <div class="container">
+        <p class="eyebrow reveal">05 &middot; Method</p>
+        <h2 class="h2 mask"><span><span>Every number is traceable</span></span></h2>
+        <p class="lede reveal">Raw filings are saved untouched, parsed by code, checked, and fed into an Excel model with live formulas. Hover a dotted number on this page to see its source.</p>
+        <ol class="steps">
+          <li class="reveal"><span>01</span><h3>Collect</h3><p>Makita IFRS releases and audited statements, MoF JGB yields, Damodaran, SEC, yfinance. Every file logged with a checksum.</p></li>
+          <li class="reveal"><span>02</span><h3>Parse and check</h3><p>PDF statements parsed to tidy tables; <b class="f" data-fact="data_checks"></b> integrity checks; restatements flagged.</p></li>
+          <li class="reveal"><span>03</span><h3>Model</h3><p>Three statements, regional revenue x FX, DCF, comps and sensitivities in Excel, recalculated headlessly; all checks pass in all scenarios.</p></li>
+          <li class="reveal"><span>04</span><h3>Publish</h3><p>The PDF report, this site and the model are generated from the same outputs.</p></li>
+        </ol>
+        <div class="downloads reveal">
+          <a class="dl" href="/downloads/Makita_6586_initiation.pdf" target="_blank" rel="noopener"><span class="label">Report</span><b>Initiation PDF, 8 pages</b></a>
+          <a class="dl" href="/downloads/Makita_6586_model.xlsx" download><span class="label">Model</span><b>Excel, live formulas</b></a>
+          <a class="dl" href="https://github.com/jdjibu/project_01" target="_blank" rel="noopener"><span class="label">Code</span><b>GitHub repository</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><b>Student research project.</b> Prepared for educational and portfolio purposes. Not investment advice, not affiliated with or reviewed by Makita Corporation. Data from public sources retrieved 29 October 2026; accuracy not guaranteed.</p>
+      <p class="footer__end" id="footerEnd">You reached the end. The balance sheet balances.</p>
+    </div>
+  </footer>
+
+  <div class="tip" id="tip" role="tooltip"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+ "revenue": {
+  "display": "¥777.6bn",
+  "source": "Makita FY3/2026 earnings release, p.10 (consolidated statement of profit or loss)"
+ },
+ "op_margin": {
+  "display": "13.5%",
+  "source": "Makita FY3/2026 earnings release, p.10; operating profit / revenue"
+ },
+ "gross_margin": {
+  "display": "36.5%",
+  "source": "Makita FY3/2026 earnings release, p.10"
+ },
+ "gross_margin_18": {
+  "display": "36.9%",
+  "source": "Makita FY3/2019 release (IFRS comparative for FY3/2018)"
+ },
+ "sga_18": {
+  "display": "20.0%",
+  "source": "Makita FY3/2019 release; SG&A / revenue"
+ },
+ "sga_26": {
+  "display": "23.1%",
+  "source": "Makita FY3/2026 earnings release; SG&A / revenue"
+ },
+ "dio": {
+  "display": "278 days",
+  "source": "Makita FY3/2026 earnings release: inventories / cost of sales x 365 (year-end)"
+ },
+ "dio_22": {
+  "display": "339 days",
+  "source": "Makita FY3/2022 release: inventories / cost of sales x 365"
+ },
+ "dio_24": {
+  "display": "244 days",
+  "source": "Makita FY3/2024 release"
+ },
+ "gm_23": {
+  "display": "24.7%",
+  "source": "Makita FY3/2023 release"
+ },
+ "net_cash": {
+  "display": "¥268.7bn",
+  "source": "Makita FY3/2026 earnings release: cash + time deposits - borrowings - lease liabilities"
+ },
+ "roe": {
+  "display": "8.3%",
+  "source": "Makita FY3/2026 earnings release: profit to owners / average parent equity"
+ },
+ "roic": {
+  "display": "11.7%",
+  "source": "NOPAT / average (operating NWC + PP&E + intangibles); data/clean/ratios.csv"
+ },
+ "europe_share": {
+  "display": "50%",
+  "source": "Makita FY3/2026 earnings release, p.16 (revenue by customer location)"
+ },
+ "na_share": {
+  "display": "10%",
+  "source": "Makita FY3/2026 earnings release, p.16"
+ },
+ "aftermarket": {
+  "display": "22.8%",
+  "source": "Makita FY3/2026 earnings release, p.15 (revenue by product category)"
+ },
+ "aftermarket_18": {
+  "display": "16.4%",
+  "source": "Makita FY3/2019 release (FY3/2018 comparative)"
+ },
+ "ev_ebitda": {
+  "display": "7.8x",
+  "source": "Model: Comps sheet; EV (incl. leases) / LTM EBITDA to Jun 2026"
+ },
+ "own_med": {
+  "display": "9.8x",
+  "source": "Model: Makita EV/EBITDA at each FY end, FY2019-26 median (makita_hist_multiples.csv)"
+ },
+ "peer_med": {
+  "display": "13.0x",
+  "source": "Model: Comps sheet, peer median (last reported FY)"
+ },
+ "fcf_conv": {
+  "display": "54%",
+  "source": "Cumulative FY2018-26 FCF / net income; ratios.csv"
+ },
+ "china_share": {
+  "display": "51.5%",
+  "source": "Makita Report 2026, p.23 (production units, FYE2026)"
+ },
+ "q1_jpy": {
+  "display": "+10.7%",
+  "source": "Makita 1Q FY3/2027 release, p.3"
+ },
+ "milwaukee": {
+  "display": "+7.9%",
+  "source": "Techtronic Industries 2025 results release (local currency)"
+ },
+ "europe_lc_26": {
+  "display": "-1.5%",
+  "source": "Model Drivers sheet: Europe revenue growth in JPY (+4.9%) stripped of the EUR/JPY change (+6.6%)"
+ },
+ "target_margin": {
+  "display": "15%",
+  "source": "Makita Report 2026, p.19 (Vision FY2030)"
+ },
+ "target_roe": {
+  "display": "11%",
+  "source": "Makita Report 2026, p.19 (Vision FY2030)"
+ },
+ "rf": {
+  "display": "2.87%",
+  "source": "Ministry of Finance Japan, 10Y JGB, 28 Oct 2026"
+ },
+ "crp": {
+  "display": "1.20%",
+  "source": "Damodaran regional CRPs weighted by Makita revenue (crp_weighted.csv)"
+ },
+ "data_checks": {
+  "display": "342",
+  "source": "src/check_clean.py: statement subtotals, balance, cash ties, segment sums"
+ }
+}
