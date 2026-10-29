@@ -121,7 +121,7 @@ def style(ax, ylabel=None):
 
 
 def fig(h=3.1):
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8})
+    plt.rcParams.update({"font.family": "Carlito", "font.size": 8.5})
     return plt.figure(figsize=(6.6, h), dpi=200)
 
 
