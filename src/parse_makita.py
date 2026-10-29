@@ -179,7 +179,7 @@ def segments(text, fy):
             cur = {"external_revenue": nums}
         elif "inter-segment" in low:
             cur["intersegment_revenue"] = nums
-        elif re.match(r"^total", low):
+        elif "total" in low:  # label can carry a stray CJK glyph from the PDF, e.g. '䚷Total'
             cur["total_revenue"] = nums
         elif "operating profit" in low:
             cur["operating_profit"] = nums

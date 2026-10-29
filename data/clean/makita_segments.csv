@@ -335,6 +335,14 @@ fy,segment,item,value,source,release_fy
 2023,Other,intersegment_revenue,444.0,financial_results202403.pdf,2024
 2023,Eliminations,intersegment_revenue,-585835.0,financial_results202403.pdf,2024
 2023,Consolidated,intersegment_revenue,0.0,financial_results202403.pdf,2024
+2023,Japan,total_revenue,415087.0,financial_results202403.pdf,2024
+2023,Europe,total_revenue,363062.0,financial_results202403.pdf,2024
+2023,North America,total_revenue,125134.0,financial_results202403.pdf,2024
+2023,Asia,total_revenue,335886.0,financial_results202403.pdf,2024
+2023,Subtotal,total_revenue,1239169.0,financial_results202403.pdf,2024
+2023,Other,total_revenue,111368.0,financial_results202403.pdf,2024
+2023,Eliminations,total_revenue,-585835.0,financial_results202403.pdf,2024
+2023,Consolidated,total_revenue,764702.0,financial_results202403.pdf,2024
 2023,Japan,operating_profit,-2119.0,financial_results202403.pdf,2024
 2023,Europe,operating_profit,9088.0,financial_results202403.pdf,2024
 2023,North America,operating_profit,-912.0,financial_results202403.pdf,2024
@@ -359,6 +367,14 @@ fy,segment,item,value,source,release_fy
 2024,Other,intersegment_revenue,294.0,financial_results202403.pdf,2024
 2024,Eliminations,intersegment_revenue,-403298.0,financial_results202403.pdf,2024
 2024,Consolidated,intersegment_revenue,0.0,financial_results202403.pdf,2024
+2024,Japan,total_revenue,321243.0,financial_results202403.pdf,2024
+2024,Europe,total_revenue,371074.0,financial_results202403.pdf,2024
+2024,North America,total_revenue,100295.0,financial_results202403.pdf,2024
+2024,Asia,total_revenue,240209.0,financial_results202403.pdf,2024
+2024,Subtotal,total_revenue,1032821.0,financial_results202403.pdf,2024
+2024,Other,total_revenue,111868.0,financial_results202403.pdf,2024
+2024,Eliminations,total_revenue,-403298.0,financial_results202403.pdf,2024
+2024,Consolidated,total_revenue,741391.0,financial_results202403.pdf,2024
 2024,Japan,operating_profit,19006.0,financial_results202403.pdf,2024
 2024,Europe,operating_profit,17830.0,financial_results202403.pdf,2024
 2024,North America,operating_profit,-126.0,financial_results202403.pdf,2024
@@ -383,6 +399,14 @@ fy,segment,item,value,source,release_fy
 2024,Other,intersegment_revenue,294.0,financial_results202503.pdf,2025
 2024,Eliminations,intersegment_revenue,-403298.0,financial_results202503.pdf,2025
 2024,Consolidated,intersegment_revenue,0.0,financial_results202503.pdf,2025
+2024,Japan,total_revenue,321243.0,financial_results202503.pdf,2025
+2024,Europe,total_revenue,371074.0,financial_results202503.pdf,2025
+2024,North America,total_revenue,100295.0,financial_results202503.pdf,2025
+2024,Asia,total_revenue,240209.0,financial_results202503.pdf,2025
+2024,Subtotal,total_revenue,1032821.0,financial_results202503.pdf,2025
+2024,Other,total_revenue,111868.0,financial_results202503.pdf,2025
+2024,Eliminations,total_revenue,-403298.0,financial_results202503.pdf,2025
+2024,Consolidated,total_revenue,741391.0,financial_results202503.pdf,2025
 2024,Japan,operating_profit,19006.0,financial_results202503.pdf,2025
 2024,Europe,operating_profit,17830.0,financial_results202503.pdf,2025
 2024,North America,operating_profit,-126.0,financial_results202503.pdf,2025
@@ -407,6 +431,14 @@ fy,segment,item,value,source,release_fy
 2025,Other,intersegment_revenue,344.0,financial_results202503.pdf,2025
 2025,Eliminations,intersegment_revenue,-595776.0,financial_results202503.pdf,2025
 2025,Consolidated,intersegment_revenue,0.0,financial_results202503.pdf,2025
+2025,Japan,total_revenue,437282.0,financial_results202503.pdf,2025
+2025,Europe,total_revenue,395238.0,financial_results202503.pdf,2025
+2025,North America,total_revenue,90966.0,financial_results202503.pdf,2025
+2025,Asia,total_revenue,311708.0,financial_results202503.pdf,2025
+2025,Subtotal,total_revenue,1235195.0,financial_results202503.pdf,2025
+2025,Other,total_revenue,113712.0,financial_results202503.pdf,2025
+2025,Eliminations,total_revenue,-595776.0,financial_results202503.pdf,2025
+2025,Consolidated,total_revenue,753130.0,financial_results202503.pdf,2025
 2025,Japan,operating_profit,27658.0,financial_results202503.pdf,2025
 2025,Europe,operating_profit,37582.0,financial_results202503.pdf,2025
 2025,North America,operating_profit,-19.0,financial_results202503.pdf,2025
@@ -431,6 +463,14 @@ fy,segment,item,value,source,release_fy
 2025,Other,intersegment_revenue,344.0,financial_results202603.pdf,2026
 2025,Eliminations,intersegment_revenue,-595776.0,financial_results202603.pdf,2026
 2025,Consolidated,intersegment_revenue,0.0,financial_results202603.pdf,2026
+2025,Japan,total_revenue,437282.0,financial_results202603.pdf,2026
+2025,Europe,total_revenue,395238.0,financial_results202603.pdf,2026
+2025,North America,total_revenue,90966.0,financial_results202603.pdf,2026
+2025,Asia,total_revenue,311708.0,financial_results202603.pdf,2026
+2025,Subtotal,total_revenue,1235195.0,financial_results202603.pdf,2026
+2025,Other,total_revenue,113712.0,financial_results202603.pdf,2026
+2025,Eliminations,total_revenue,-595776.0,financial_results202603.pdf,2026
+2025,Consolidated,total_revenue,753130.0,financial_results202603.pdf,2026
 2025,Japan,operating_profit,27658.0,financial_results202603.pdf,2026
 2025,Europe,operating_profit,37582.0,financial_results202603.pdf,2026
 2025,North America,operating_profit,-19.0,financial_results202603.pdf,2026
@@ -455,6 +495,14 @@ fy,segment,item,value,source,release_fy
 2026,Other,intersegment_revenue,364.0,financial_results202603.pdf,2026
 2026,Eliminations,intersegment_revenue,-640662.0,financial_results202603.pdf,2026
 2026,Consolidated,intersegment_revenue,0.0,financial_results202603.pdf,2026
+2026,Japan,total_revenue,466867.0,financial_results202603.pdf,2026
+2026,Europe,total_revenue,418728.0,financial_results202603.pdf,2026
+2026,North America,total_revenue,89033.0,financial_results202603.pdf,2026
+2026,Asia,total_revenue,326432.0,financial_results202603.pdf,2026
+2026,Subtotal,total_revenue,1301060.0,financial_results202603.pdf,2026
+2026,Other,total_revenue,117202.0,financial_results202603.pdf,2026
+2026,Eliminations,total_revenue,-640662.0,financial_results202603.pdf,2026
+2026,Consolidated,total_revenue,777600.0,financial_results202603.pdf,2026
 2026,Japan,operating_profit,38935.0,financial_results202603.pdf,2026
 2026,Europe,operating_profit,39015.0,financial_results202603.pdf,2026
 2026,North America,operating_profit,2306.0,financial_results202603.pdf,2026

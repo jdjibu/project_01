@@ -224,38 +224,83 @@ CF->BS: end cash = BS cash,FY2026,257385.0,257385.0,0.0,True
 CF->BS: begin cash = prior BS cash,FY2026,253279.0,253279.0,0.0,True
 CF: profit line = IS profit,FY2026,79438.0,79438.0,0.0,True
 Supp: disclosed capex = CF purchase of non-current assets,FY2026,21532.0,21532.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2018,309689.0,309689.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2018,207175.0,207175.0,0.0,True
+Segments: North America total = external + inter-segment,FY2018,80712.0,80712.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2018,238835.0,238835.0,0.0,True
+Segments: Other total = external + inter-segment,FY2018,67170.0,67170.0,0.0,True
 Segments: external revenue sums to consolidated,FY2018,477298.0,477298.0,0.0,True
 Segments: consolidated = IS revenue,FY2018,477298.0,477298.0,0.0,True
 Segments: OP sums to consolidated,FY2018,80231.0,80231.0,0.0,True
 Segments: consolidated OP = IS OP,FY2018,80231.0,80231.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2019,332254.0,332254.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2019,219805.0,219805.0,0.0,True
+Segments: North America total = external + inter-segment,FY2019,78795.0,78795.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2019,247413.0,247413.0,0.0,True
+Segments: Other total = external + inter-segment,FY2019,64070.0,64070.0,0.0,True
 Segments: external revenue sums to consolidated,FY2019,490578.0,490578.0,0.0,True
 Segments: consolidated = IS revenue,FY2019,490578.0,490578.0,0.0,True
 Segments: OP sums to consolidated,FY2019,78305.0,78305.0,0.0,True
 Segments: consolidated OP = IS OP,FY2019,78305.0,78305.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2020,295364.0,295364.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2020,224436.0,224436.0,0.0,True
+Segments: North America total = external + inter-segment,FY2020,78035.0,78035.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2020,212924.0,212924.0,0.0,True
+Segments: Other total = external + inter-segment,FY2020,58243.0,58243.0,0.0,True
 Segments: external revenue sums to consolidated,FY2020,492617.0,492617.0,0.0,True
 Segments: consolidated = IS revenue,FY2020,492617.0,492617.0,0.0,True
 Segments: OP sums to consolidated,FY2020,64046.0,64046.0,0.0,True
 Segments: consolidated OP = IS OP,FY2020,64046.0,64046.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2021,378714.0,378714.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2021,297016.0,297016.0,0.0,True
+Segments: North America total = external + inter-segment,FY2021,97032.0,97032.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2021,290785.0,290785.0,0.0,True
+Segments: Other total = external + inter-segment,FY2021,75101.0,75101.0,0.0,True
 Segments: external revenue sums to consolidated,FY2021,608331.0,608331.0,0.0,True
 Segments: consolidated = IS revenue,FY2021,608331.0,608331.0,0.0,True
 Segments: OP sums to consolidated,FY2021,88464.0,88464.0,0.0,True
 Segments: consolidated OP = IS OP,FY2021,88464.0,88464.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2022,536794.0,536794.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2022,375254.0,375254.0,0.0,True
+Segments: North America total = external + inter-segment,FY2022,120367.0,120367.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2022,443833.0,443833.0,0.0,True
+Segments: Other total = external + inter-segment,FY2022,98470.0,98470.0,0.0,True
 Segments: external revenue sums to consolidated,FY2022,739260.0,739260.0,0.0,True
 Segments: consolidated = IS revenue,FY2022,739260.0,739260.0,0.0,True
 Segments: OP sums to consolidated,FY2022,91728.0,91728.0,0.0,True
 Segments: consolidated OP = IS OP,FY2022,91728.0,91728.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2023,415087.0,415087.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2023,363062.0,363062.0,0.0,True
+Segments: North America total = external + inter-segment,FY2023,125134.0,125134.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2023,335886.0,335886.0,0.0,True
+Segments: Other total = external + inter-segment,FY2023,111368.0,111368.0,0.0,True
 Segments: external revenue sums to consolidated,FY2023,764702.0,764702.0,0.0,True
 Segments: consolidated = IS revenue,FY2023,764702.0,764702.0,0.0,True
 Segments: OP sums to consolidated,FY2023,28246.0,28246.0,0.0,True
 Segments: consolidated OP = IS OP,FY2023,28246.0,28246.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2024,321243.0,321243.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2024,371074.0,371074.0,0.0,True
+Segments: North America total = external + inter-segment,FY2024,100295.0,100295.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2024,240209.0,240209.0,0.0,True
+Segments: Other total = external + inter-segment,FY2024,111868.0,111868.0,0.0,True
 Segments: external revenue sums to consolidated,FY2024,741391.0,741391.0,0.0,True
 Segments: consolidated = IS revenue,FY2024,741391.0,741391.0,0.0,True
 Segments: OP sums to consolidated,FY2024,66169.0,66169.0,0.0,True
 Segments: consolidated OP = IS OP,FY2024,66169.0,66169.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2025,437282.0,437282.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2025,395238.0,395238.0,0.0,True
+Segments: North America total = external + inter-segment,FY2025,90966.0,90966.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2025,311708.0,311708.0,0.0,True
+Segments: Other total = external + inter-segment,FY2025,113712.0,113711.0,1.0,True
 Segments: external revenue sums to consolidated,FY2025,753130.0,753130.0,0.0,True
 Segments: consolidated = IS revenue,FY2025,753130.0,753130.0,0.0,True
 Segments: OP sums to consolidated,FY2025,107038.0,107038.0,0.0,True
 Segments: consolidated OP = IS OP,FY2025,107038.0,107038.0,0.0,True
+Segments: Japan total = external + inter-segment,FY2026,466867.0,466867.0,0.0,True
+Segments: Europe total = external + inter-segment,FY2026,418728.0,418728.0,0.0,True
+Segments: North America total = external + inter-segment,FY2026,89033.0,89033.0,0.0,True
+Segments: Asia total = external + inter-segment,FY2026,326432.0,326432.0,0.0,True
+Segments: Other total = external + inter-segment,FY2026,117202.0,117202.0,0.0,True
 Segments: external revenue sums to consolidated,FY2026,777600.0,777600.0,0.0,True
 Segments: consolidated = IS revenue,FY2026,777600.0,777600.0,0.0,True
 Segments: OP sums to consolidated,FY2026,104705.0,104705.0,0.0,True
