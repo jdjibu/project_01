@@ -23,10 +23,21 @@ PEERS = {"0669.HK": "Techtronic Industries", "SWK": "Stanley Black & Decker", "2
 FX_TICKER = {"USD": "JPYX", "EUR": "EURJPYX", "HKD": "HKDJPYX", "SEK": "SEKJPYX", "CNY": "CNYJPYX"}
 
 
-def prices(path):
+def prices(path, log=True):
+    """Daily prices on the exchange-local trading date. Drops vendor errors: closes more than 3x away from the median
+    of the surrounding 10 trading days (e.g. 1306.T on 30-31 Mar 2026, a mis-applied split at about 1/10 of true value)."""
     d = pd.read_csv(path, index_col=0)
     d.index = pd.to_datetime(d.index.str[:10])  # exchange-local trading date (avoid UTC shift)
-    return d
+    ref = d["Close"].rolling(11, center=True, min_periods=5).median()
+    bad = (d["Close"] / ref > 3) | (d["Close"] / ref < 1 / 3)
+    if bad.any() and log:
+        rows = d.loc[bad, ["Close"]].assign(neighbour_median=ref[bad], file=Path(path).name)
+        logf = CLEAN / "price_outliers_removed.csv"
+        old = pd.read_csv(logf, index_col=0) if logf.exists() else None
+        rows.index = rows.index.strftime("%Y-%m-%d")
+        out = rows if old is None else pd.concat([old[old.file != Path(path).name], rows])
+        out.to_csv(logf)
+    return d[~bad]
 
 
 def fx_rates():
@@ -104,6 +115,56 @@ def damodaran():
                  (f"{region} Machinery: number of firms", m[1], f)]
     d = pd.DataFrame(rows, columns=["item", "value", "source"])
     d.to_csv(CLEAN / "damodaran_inputs.csv", index=False)
+
+    # revenue-weighted country risk premium: GDP-weighted CRP per Damodaran region, weighted by Makita FY2026
+    # revenue by customer location. Japan uses its own CRP.
+    reg = pd.read_excel(RAW / "damodaran/ctryprem.xlsx", sheet_name="Regional Weighted Averages", header=0)
+    reg = reg.dropna(subset=["Region", "Country Risk Premium"])
+    reg["gdp"] = pd.to_numeric(reg.iloc[:, 1], errors="coerce")
+    crp = reg.groupby("Region").apply(lambda g: (g["Country Risk Premium"] * g.gdp).sum() / g.gdp.sum())
+    geo = pd.read_csv(CLEAN / "makita_geo_revenue.csv").query("fy == 2026 and release_fy == 2026").set_index("region")["value"]
+    mapping = {"Japan": None, "Europe": "Western Europe", "North America": "North America", "Asia": "Asia",
+               "Central & South America": "Central and South America", "Oceania": "Australia & New Zealand",
+               "Middle East & Africa": ["Middle East", "Africa"]}
+    rows = []
+    for region, dam in mapping.items():
+        if dam is None:
+            v = float(jp[5])
+        elif isinstance(dam, list):
+            v = float(crp[dam].mean())
+        else:
+            v = float(crp[dam])
+        rows.append({"makita_region": region, "damodaran_region": str(dam or "Japan (country)"),
+                     "crp": v, "revenue_fy2026": geo[region], "weight": geo[region] / geo["Total"]})
+    w = pd.DataFrame(rows)
+    w.loc[len(w)] = {"makita_region": "Revenue-weighted CRP", "damodaran_region": "", "crp": (w.crp * w.weight).sum(),
+                     "revenue_fy2026": w.revenue_fy2026.sum(), "weight": w.weight.sum()}
+    w.to_csv(CLEAN / "crp_weighted.csv", index=False)
+    return d
+
+
+def makita_hist_multiples(fx):
+    """Makita EV/EBITDA and P/E at each fiscal year-end (31 Mar) from price history and filings."""
+    px = prices(RAW / "market/6586.T_prices_daily.csv")["Close"]
+    IS = pd.read_csv(CLEAN / "makita_is.csv", index_col=0)
+    BS = pd.read_csv(CLEAN / "makita_bs.csv", index_col=0).fillna(0)
+    CF = pd.read_csv(CLEAN / "makita_cf.csv", index_col=0)
+    sup = pd.read_csv(CLEAN / "makita_supplementary_wide.csv", index_col=0)
+    rows = []
+    for fy in range(2019, 2027):
+        c = f"FY{fy}"
+        p = float(px.loc[:f"{fy}-03-31"].iloc[-1])
+        sh = sup.at["shares_issued", c] - sup.at["treasury_shares_count", c]
+        mcap = p * sh / 1e6
+        debt = BS.at["borrowings_cur", c] + BS.at["other_fin_liab_cur", c] + BS.at["other_fin_liab_nc", c]
+        cash = BS.at["cash", c] + BS.at["other_fin_assets_cur", c]
+        ev = mcap + debt - cash + BS.at["nci", c]
+        ebitda = IS.at["operating_profit", c] + CF.at["cfo_da", c]
+        rows.append({"fy": c, "price": p, "shares": sh, "market_cap": mcap, "ev": ev, "ebitda": ebitda,
+                     "ev_ebitda": ev / ebitda, "pe": mcap / IS.at["ni_parent", c],
+                     "pb": mcap / BS.at["equity_parent", c]})
+    d = pd.DataFrame(rows)
+    d.to_csv(CLEAN / "makita_hist_multiples.csv", index=False)
     return d
 
 
@@ -214,6 +275,7 @@ def main():
     beta_table()
     ltm()
     snapshot(bs_latest(), fx)
+    makita_hist_multiples(fx)
     peers(fx)
     print("market inputs written to", CLEAN)
 

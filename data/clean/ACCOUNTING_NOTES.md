@@ -16,8 +16,8 @@ All figures are JPY millions, IFRS, fiscal year (FY) ending 31 March. FY2026 = y
 | 10 | IAS 21 amendment | FY2026 | Lack of exchangeability guidance. Company states no material impact. | None. |
 
 ## Integrity checks
-`src/check_clean.py` runs 297 checks (statement subtotals, BS balance, CF-to-BS cash tie, segment and region sums
-to consolidated revenue and OP, capex tie). Result at last run: **297 / 297 pass** (`checks_makita.csv`).
+`src/check_clean.py` runs 342 checks (statement subtotals, BS balance, CF-to-BS cash tie, segment and region sums
+to consolidated revenue and OP, segment totals, capex tie). Result at last run: **342 / 342 pass** (`checks_makita.csv`).
 
 ## Known gaps
 - Share counts for FY2018 are not parsed (only needed for FY2018 per-share history; EPS from the release is used instead).
@@ -25,3 +25,9 @@ to consolidated revenue and OP, capex tie). Result at last run: **297 / 297 pass
   (`peer_crosscheck.csv`). TTI, Chervon, Husqvarna, Max and Yamabiko could not be cross-checked from this environment.
 - yfinance's precomputed peer ratios are wrong for cross-currency listings (TTI EV/EBITDA shown as 140x because
   EV is in HKD and EBITDA in USD). All multiples are recomputed in JPY in `peers_financials.csv`.
+
+## Market-data cleaning
+- `src/clean_market.py` drops vendor price errors: closes more than 3x away from the median of the surrounding
+  10 trading days. Removed: 1306.T (TOPIX ETF) on 30 and 31 Mar 2026, quoted at about 37 against about 383
+  (a split adjustment misapplied for two days). Log: `price_outliers_removed.csv`. The bad 31 Mar close distorted monthly betas
+  (0.99-1.12 after the fix, in line with weekly betas of 1.08-1.13); weekly betas were unaffected.
