@@ -12,6 +12,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from author import AFFILIATION, EMAIL, LINKEDIN, LINKEDIN_SHORT, NAME
 from reportlab.platypus import (BaseDocTemplate, Frame, Image, KeepTogether, PageBreak, PageTemplate, Paragraph,
                                 Spacer, Table, TableStyle)
 
@@ -98,7 +99,7 @@ def header_footer(canvas, doc):
     canvas.rect(0, H - 11.8 * mm, W, 0.8 * mm, stroke=0, fill=1)
     canvas.setFillColor(MUTED)
     canvas.setFont("Carlito", 7.2)
-    canvas.drawString(M, 8 * mm, "Student research project for educational purposes. Not investment advice. See disclosures on the last page.")
+    canvas.drawString(M, 8 * mm, f"{NAME}  |  Student research project. Not investment advice. See disclosures on the last page.")
     canvas.drawRightString(W - M, 8 * mm, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -130,7 +131,7 @@ def key_metrics():
 
 def build():
     doc = BaseDocTemplate(str(OUT), pagesize=A4, leftMargin=M, rightMargin=M, topMargin=18 * mm, bottomMargin=14 * mm,
-                          title="Makita Corporation (6586 JP): Initiation of coverage", author="Student research project")
+                          title="Makita Corporation (6586 JP): Initiation of coverage", author=NAME, subject="Student research project, not investment advice")
     frame = Frame(M, 14 * mm, W - 2 * M, H - 32 * mm, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
     doc.addPageTemplates([PageTemplate(id="p", frames=[frame], onPage=header_footer)])
     s = []
@@ -142,6 +143,9 @@ def build():
 
     # ------------------------------------------------------------------ page 1
     s.append(P("Great franchise, fairly priced: the recovery is done, the yen did the rest", h1))
+    byline = ParagraphStyle("byline", parent=body, fontSize=8.6, leading=11, textColor=MUTED, spaceAfter=8)
+    s.append(P(f"<b><font color='#1A1A1A'>{NAME}</font></b>  ·  {AFFILIATION}  ·  "
+               f"<link href='mailto:{EMAIL}'>{EMAIL}</link>  ·  <link href='{LINKEDIN}'>{LINKEDIN_SHORT}</link>", byline))
     left = [
         P(f"We initiate on Makita with a <b>HOLD</b> and a 12-month target price of <b>JPY {n0(tp)}</b> "
                   f"({pct(up)} upside; {pct(tsr)} total return including dividends). Makita has repaired its margins after "
@@ -442,12 +446,14 @@ def build():
         "repository README and SOURCES.md.", body))
     s.append(P("Disclosures", h2))
     s.append(P(
-        "This report is a student research project prepared for educational and portfolio purposes. It is not investment advice, "
+        f"This report was prepared by {NAME} ({AFFILIATION}) as a student research project for educational and portfolio "
+        "purposes. It is not investment advice, "
         "an offer or a solicitation to buy or sell any security, and it has not been reviewed by Makita Corporation or any "
         "regulated firm. The author holds no position in the securities mentioned. Figures come from public sources believed to be "
         "reliable (Makita earnings releases and audited statements, Ministry of Finance Japan, Damodaran Online, SEC EDGAR and "
         "Yahoo Finance via yfinance), retrieved 29 October 2026, but accuracy is not guaranteed. Forecasts and the target price are "
-        "the author's estimates and are uncertain. Past performance is not a guide to future returns.", small))
+        "the author's estimates and are uncertain. Past performance is not a guide to future returns. "
+        f"Contact: {EMAIL} · {LINKEDIN_SHORT}", small))
     doc.build(s)
     print("wrote", OUT)
 

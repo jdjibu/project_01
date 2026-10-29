@@ -1,5 +1,8 @@
 # Makita Corporation (6586 JP): Initiation of Coverage
 
+By **James Pieter Djibu**, BSc Economics, Nagoya University (Class of 2028) ·
+[LinkedIn](https://www.linkedin.com/in/james-pieter-djibu-1490b2244/) · jamespieter16@gmail.com
+
 **Student equity research project. Not investment advice.**
 
 | | |
@@ -91,6 +94,6 @@ SOURCES.md         every dataset with URL and retrieval date
 - Integrated reports (100MB+) are downloaded by `fetch_data.py` but not committed.
 
 ## Disclaimer
-Prepared for educational and portfolio purposes. Not investment advice, not an offer or solicitation, and not reviewed by
+Prepared by James Pieter Djibu for educational and portfolio purposes. Not investment advice, not an offer or solicitation, and not reviewed by
 Makita Corporation or any regulated firm. The author holds no position. Sources are believed reliable but accuracy is
 not guaranteed.

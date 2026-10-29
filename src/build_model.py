@@ -17,6 +17,7 @@ import pandas as pd
 import xlsxwriter
 from xlsxwriter.utility import xl_rowcol_to_cell
 
+from author import AFFILIATION, EMAIL, NAME
 from recalc import recalc
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -870,21 +871,22 @@ def build(d, scenario: int, path: Path, overrides=None):
     # ---------------- Cover
     cover.set_column(0, 0, 4); cover.set_column(1, 1, 44); cover.set_column(2, 2, 18); cover.set_column(3, 3, 80)
     cover.write(1, 1, "Makita Corporation (6586 JP): initiation model", f["title"])
-    cover.write(2, 1, "Student research project, not investment advice. IFRS, JPY m, FY ends 31 March.", f["sub"])
+    cover.write(2, 1, f"By {NAME}, {AFFILIATION} ({EMAIL})", f["bold"])
+    cover.write(3, 1, "Student research project, not investment advice. IFRS, JPY m, FY ends 31 March.", f["sub"])
     items = [("Scenario", "=Assumptions!E4", "ok"), ("Rating", f"={VK['rating']}", "ok"),
              ("12-month target price (JPY)", f"={VK['tp']}", "yen_key"), ("Current price (JPY)", f"={MK['price']}", "yen"),
              ("Upside / (downside)", f"={VK['upside']}", "pct"), ("DCF value, Gordon (JPY)", f"={VK['ps_g']}", "yen"),
              ("DCF value, exit multiple (JPY)", f"={VK['ps_x']}", "yen"), ("WACC", f"={MK['wacc']}", "pct"),
              ("Cost of equity", f"={MK['ke']}", "pct"), ("Model checks", f"={KK}", "ok")]
     for i, (lab, frm, fm) in enumerate(items):
-        cover.write(4 + i, 1, lab, f["bold"]); cover.write_formula(4 + i, 2, frm, f[fm])
+        cover.write(5 + i, 1, lab, f["bold"]); cover.write_formula(5 + i, 2, frm, f[fm])
     notes = ["How to use: change Assumptions!D4 (1 Base, 2 Bull, 3 Bear). Everything recalculates.",
              "Colour code: blue = input or historical fact; black = formula; tinted = key output.",
              "Sheets: Assumptions > Drivers (regional revenue x FX) > IS > BS > CF > DCF > Comps > Sensitivity > Football > Checks.",
              "Sources: Makita earnings releases and audited statements; yfinance; MoF JGB; Damodaran. See SOURCES.md.",
              "Built by src/build_model.py and recalculated in LibreOffice; values are cached so the file opens with results."]
     for i, n in enumerate(notes):
-        cover.write(16 + i, 1, n, f["note"])
+        cover.write(17 + i, 1, n, f["note"])
     flush()
     wb.close()
     return dict(VK=VK, MK=MK, KK=KK, SK=SK, FK=FK, I=I.rows, B=B.rows, C=C.rows, V=V.rows, D=D.rows, MKC=MKC, PK=PK)

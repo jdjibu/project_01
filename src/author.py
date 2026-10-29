@@ -1,0 +1,6 @@
+"""Author details used by the report and the model (single source)."""
+NAME = "James Pieter Djibu"
+AFFILIATION = "BSc Economics, Nagoya University, Class of 2028"
+EMAIL = "jamespieter16@gmail.com"
+LINKEDIN = "https://www.linkedin.com/in/james-pieter-djibu-1490b2244/"
+LINKEDIN_SHORT = "linkedin.com/in/james-pieter-djibu-1490b2244"

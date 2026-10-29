@@ -295,6 +295,23 @@ function navAndParallax() {
   });
 }
 
+// ---------------------------------------------------------------- contact: copy email with feedback
+function copyEmail() {
+  const b = $('#copyEmail');
+  if (!b) return;
+  const hint = b.querySelector('.copy__hint');
+  b.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(b.dataset.email);
+      hint.textContent = 'Copied';
+    } catch {
+      hint.textContent = 'Select to copy';
+    }
+    b.classList.add('is-copied');
+    setTimeout(() => { hint.textContent = 'Copy'; b.classList.remove('is-copied'); }, 1800);
+  });
+}
+
 // ---------------------------------------------------------------- boot
 (async function main() {
   // hero title reveals immediately
@@ -324,5 +341,6 @@ function navAndParallax() {
   spotlight();
   magnet();
   navAndParallax();
+  copyEmail();
   window.addEventListener('scroll', hideTip, { passive: true });
 })();
