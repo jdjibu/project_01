@@ -1,0 +1,92 @@
+file,source,retrieved_utc,sha256
+damodaran/betaGlobal.xls,https://pages.stern.nyu.edu/~adamodar/pc/datasets/betaGlobal.xls,2026-10-29T14:27:46+00:00,10c33f46df2a35fa7e4e8c4386c01f9da636fc2ab3e1e98307a52a947c9ab52b
+damodaran/betaJapan.xls,https://pages.stern.nyu.edu/~adamodar/pc/datasets/betaJapan.xls,2026-10-29T14:27:47+00:00,254c3b3c4d295cd89c69f92b106a6f393bc51c975f6059698225e6a53085baf9
+damodaran/ctryprem.xlsx,https://pages.stern.nyu.edu/~adamodar/pc/datasets/ctryprem.xlsx,2026-10-29T14:27:46+00:00,b5200e8abcb09f55a4a56c9493657d7556af30ede0d10928c403e352627109c9
+damodaran/histimpl.xls,https://pages.stern.nyu.edu/~adamodar/pc/datasets/histimpl.xls,2026-10-29T14:27:46+00:00,bb4d8da0a371a00af06172ec41dcef35a9ae30d6ab9c03d58ab5d2187e1e406f
+macro/mof_jgb_current_month.csv,https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv,2026-10-29T14:25:09+00:00,d3704ca4ac14c63f49cbd26a8ced3720d3084c94c633c8fee0295f00062a9e65
+macro/mof_jgb_historical.csv,https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv,2026-10-29T14:25:11+00:00,ffeb33ecaf557f4e443b9aebc0a2d66550dbd3d9648dcf6a61dd552fc5d7ccdd
+makita/fs/201903cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/201903cfs.pdf,2026-10-29T14:24:44+00:00,24eb8c38e4e829fa4df391c4ce0c1035b836a1564508da2c39e2d821b47d7df0
+makita/fs/202003cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202003cfs.pdf,2026-10-29T14:24:46+00:00,9eceeee0fa0ff5f3a3d67dd09a4196c129ed86e085bc1ca5c2256e12af943a7b
+makita/fs/202103cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202103cfs.pdf,2026-10-29T14:24:49+00:00,c01dfeec00958e43e06ff80b5eba2636eb4dc230d143ef69fc558d1548eb057d
+makita/fs/202203cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202203cfs.pdf,2026-10-29T14:24:53+00:00,9303f5b49b4c510c2ddc92ffce3671ea633ed864bef6fbd3e0d7de55ab9b890e
+makita/fs/202303cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202303cfs.pdf,2026-10-29T14:24:58+00:00,231f6419c748c0979ff96bd5722e784d8e163cab22175993c07a0b40bb1a62ce
+makita/fs/202403cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202403cfs.pdf,2026-10-29T14:25:03+00:00,1a464ae4c0172301b75ef80316182e7ff94a4c15b27eea52217c2ae967ec21db
+makita/fs/202503cfs2.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202503cfs2.pdf,2026-10-29T14:25:06+00:00,0dbeb5565162a14f5f72fc14444d8521174bf648c969a68a339b7fa93005b970
+makita/fs/202603cfs.pdf,https://www.makita.biz/ir/upload_file/m005-m005_03/202603cfs.pdf,2026-10-29T14:25:08+00:00,b6da8d2d56ae0d301348577f88edd2bdbbc715ea1cd2011c736775f0ddb6212d
+makita/releases/201903e.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/201903e.pdf,2026-10-29T14:24:22+00:00,deb0260fd8414c0fe0e1d2ff18d4b1bcb75381ff51d4e57174fdda111e313b70
+makita/releases/202003e.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/202003e.pdf,2026-10-29T14:24:24+00:00,7780cebcbe42f58f6558515fe1022a8a8c35768032ec596056f54587362f39a7
+makita/releases/financial_results202103.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202103.pdf,2026-10-29T14:24:25+00:00,928834846d2fb5fb76a89d0b54febc73672408383c3e84791c725dd9c7581eff
+makita/releases/financial_results202203.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202203.pdf,2026-10-29T14:24:27+00:00,b23530340f3b5321c3dec210cb84d9ea816ee656056d873142d2a706e81ed43f
+makita/releases/financial_results202303.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202303.pdf,2026-10-29T14:24:29+00:00,0fc54af573d522227bf7c01a6c8f887dba634dd6e25c0716e1d589ef160dd61b
+makita/releases/financial_results202403.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202403.pdf,2026-10-29T14:24:32+00:00,3a8cd70316757498c76934575e4081028ab898c2f2f9e8d6151ecdde964d156b
+makita/releases/financial_results202503-2.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202503-2.pdf,2026-10-29T14:24:39+00:00,f649f4d16da3ee8fd6728f113d69190577b1deef5532f56c6458b6bdc8c0fd56
+makita/releases/financial_results202503.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202503.pdf,2026-10-29T14:24:36+00:00,391e9aa3b8ed3a3eecedfbc3ad9a3677708e066fc59b19631cd8a968d0d77b61
+makita/releases/financial_results202506.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202506.pdf,2026-10-29T14:24:41+00:00,095edea9558c3cf11ae5829569355498db58962d714a49941533ad5529a5bb3f
+makita/releases/financial_results202603.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202603.pdf,2026-10-29T14:24:38+00:00,b71dda04ad957ff2702e496760a80edf8d2494367b204ed0c4ce3860af55bcf4
+makita/releases/financial_results202606.pdf,https://www.makita.biz/ir/upload_file/m005-m005_02/financial_results202606.pdf,2026-10-29T14:24:42+00:00,bc99da546a98e28900bdc1ff8c8b70e5ef7d9fe7dfad47224aa93c6723cb2adc
+market/1306.T_prices_daily.csv,"yfinance 1.7.0: 1306.T history(10y, auto_adjust=False)",2026-10-29T14:27:50+00:00,ecac6314447d1dbd3628254f1c248e41b6b4675dd02da5df15e13ae36ae4e4f0
+market/6586.T_balance_sheet.csv,yfinance 1.7.0: 6586.T balance_sheet,2026-10-29T14:27:49+00:00,c5779b6e964e16ac9f6077e3f58f146aca83a87d2bfd6218dcfc82e8a03d2630
+market/6586.T_cashflow.csv,yfinance 1.7.0: 6586.T cashflow,2026-10-29T14:27:49+00:00,3c63bf35e81402410422eaec11c6f3b05182efce28ab22ecdd96c1e984041954
+market/6586.T_income_stmt.csv,yfinance 1.7.0: 6586.T income_stmt,2026-10-29T14:27:49+00:00,775258962021ee59751a136b6d1cdaae871de5e95c4a192a820d9f73441962ab
+market/6586.T_info.json,yfinance 1.7.0: 6586.T info,2026-10-29T14:27:48+00:00,8adef181f56ec7a239b7028b28a9870fa16f0fadfd2bbcecdda6791c5e55c82f
+market/6586.T_prices_daily.csv,"yfinance 1.7.0: 6586.T history(10y, auto_adjust=False)",2026-10-29T14:27:48+00:00,064bede802936206bc986ab40111585bcaec15b7fd83c26febf23cc35f092613
+market/6586.T_quarterly_balance_sheet.csv,yfinance 1.7.0: 6586.T quarterly_balance_sheet,2026-10-29T14:27:50+00:00,c4d679683c1f7516f9886182fd3efe8d274efe1348542d7d70ea6b49a093a297
+market/6586.T_quarterly_income_stmt.csv,yfinance 1.7.0: 6586.T quarterly_income_stmt,2026-10-29T14:27:49+00:00,4b8f62e70435a3e92693ecdf18e93e6dae7a1c4b54d7524bfc5fe0ed98114599
+market/CNYJPYX_prices_daily.csv,"yfinance 1.7.0: CNYJPY=X history(10y, auto_adjust=False)",2026-10-29T14:27:53+00:00,a7bee64a40557ce9f1b4b97ee9b855482cf89b69bd13e516b22d3721d2065eb4
+market/EURJPYX_prices_daily.csv,"yfinance 1.7.0: EURJPY=X history(10y, auto_adjust=False)",2026-10-29T14:27:51+00:00,93c5bdfe9622a6193461ca5b3d9bfeadf729aceea6a3f882cfb114006d8af3b1
+market/HKDJPYX_prices_daily.csv,"yfinance 1.7.0: HKDJPY=X history(10y, auto_adjust=False)",2026-10-29T14:27:52+00:00,f2a7030bbc0bcdc5716612eca2a4702c6ce69f7effe2bc397518a42e6bf39ef8
+market/JPYX_prices_daily.csv,"yfinance 1.7.0: JPY=X history(10y, auto_adjust=False)",2026-10-29T14:27:51+00:00,e829097c0dc957acbe073c78fb00be57098fd9897006ced88947928792d174e5
+market/N225_prices_daily.csv,"yfinance 1.7.0: ^N225 history(10y, auto_adjust=False)",2026-10-29T14:27:51+00:00,a035bb9a04bd5effdabd6601c6d099fbf6e9d33184831fe84ede48ed18eacc9f
+market/SEKJPYX_prices_daily.csv,"yfinance 1.7.0: SEKJPY=X history(10y, auto_adjust=False)",2026-10-29T14:27:52+00:00,cd8dadd1c5d5065f42703292e6959c0b753ad26e7b624df502369c9ca3ca6466
+peers/0669.HK_balance_sheet.csv,yfinance 1.7.0: 0669.HK balance_sheet,2026-10-29T14:27:54+00:00,99f69c11945bd01c2a79a16ad339bf879a60e5e020381bd0702026162437f5e1
+peers/0669.HK_cashflow.csv,yfinance 1.7.0: 0669.HK cashflow,2026-10-29T14:27:54+00:00,7b943a0b05afdc7a7e1ea88caf53373dfb2edd468e75f533ec73d6f0a4ee3bc9
+peers/0669.HK_income_stmt.csv,yfinance 1.7.0: 0669.HK income_stmt,2026-10-29T14:27:54+00:00,6d547ba489714fbe020e361b0483554988564bfb761357c53112c15b9d6438b3
+peers/0669.HK_info.json,yfinance 1.7.0: 0669.HK info,2026-10-29T14:27:54+00:00,f708f95df40aa3464a010af718f817f9bb1c88aacef3da73b9ebe264aa84df68
+peers/0669.HK_prices_daily.csv,"yfinance 1.7.0: 0669.HK history(10y, auto_adjust=False)",2026-10-29T14:27:53+00:00,2987da751dfebe0a25f6ef846c6e40b39476779644156b9024994170799337e2
+peers/0669.HK_quarterly_balance_sheet.csv,yfinance 1.7.0: 0669.HK quarterly_balance_sheet,2026-10-29T14:27:55+00:00,7da1422c7251437c43874aaf2106a2d1feb09056102a86409fe8a0e0659d6619
+peers/2285.HK_balance_sheet.csv,yfinance 1.7.0: 2285.HK balance_sheet,2026-10-29T14:28:01+00:00,af1a0e5047ce05ff825c1d0b94212e1189e44c9dc17cc95b43e0c9ba22ea42a6
+peers/2285.HK_cashflow.csv,yfinance 1.7.0: 2285.HK cashflow,2026-10-29T14:28:02+00:00,74bb17eeb8efe4a8d74f717e488d675abf288b8cb45c3a355c2425949e1761df
+peers/2285.HK_income_stmt.csv,yfinance 1.7.0: 2285.HK income_stmt,2026-10-29T14:28:01+00:00,14a5eccaf45b79dd8f57e5087bd038850a6916a42f7bc344d3210275c3482148
+peers/2285.HK_info.json,yfinance 1.7.0: 2285.HK info,2026-10-29T14:28:01+00:00,2e6b19c913a72aa865bc8adc19d3ec9561a120ff757fa2810727f0b294017f97
+peers/2285.HK_prices_daily.csv,"yfinance 1.7.0: 2285.HK history(10y, auto_adjust=False)",2026-10-29T14:28:00+00:00,a290414c40e71bb2a9ea5ca17d614e4c5d0468049ac8601edd1feb0302c21ff2
+peers/2285.HK_quarterly_balance_sheet.csv,yfinance 1.7.0: 2285.HK quarterly_balance_sheet,2026-10-29T14:28:02+00:00,7d0a7318aeb797f443319fab43284c1fc31913e5d16de1998ddbcd3937391953
+peers/6250.T_balance_sheet.csv,yfinance 1.7.0: 6250.T balance_sheet,2026-10-29T14:28:13+00:00,566530ce073e07d6333d6835d2a07cd4d61129fb02882da09754a8858ebcf00e
+peers/6250.T_cashflow.csv,yfinance 1.7.0: 6250.T cashflow,2026-10-29T14:28:13+00:00,ad459612e7254c548bc26f801ab4d292cb3690d8b48dbba317f7daa2dc795e8e
+peers/6250.T_income_stmt.csv,yfinance 1.7.0: 6250.T income_stmt,2026-10-29T14:28:13+00:00,4c7668ab05bf1f9f9075b2e4aec3a45e7f9e7c58ee97f4bded4f898ba145a3db
+peers/6250.T_info.json,yfinance 1.7.0: 6250.T info,2026-10-29T14:28:12+00:00,8d7c860463efa403d9bc744546f923de8e051b193baf0b617f0975b19f1d8311
+peers/6250.T_prices_daily.csv,"yfinance 1.7.0: 6250.T history(10y, auto_adjust=False)",2026-10-29T14:28:12+00:00,8abdd4e8853e62c6de3b99da493ef54439ebbb7050d0bf0e3179206cb7ba3766
+peers/6250.T_quarterly_balance_sheet.csv,yfinance 1.7.0: 6250.T quarterly_balance_sheet,2026-10-29T14:28:14+00:00,6f705985ea8b48558ece81e4e3e7ea7ea852846edf8f1dc22b4d9f7658091e5a
+peers/6250.T_quarterly_income_stmt.csv,yfinance 1.7.0: 6250.T quarterly_income_stmt,2026-10-29T14:28:14+00:00,c13309979446b75df511ae14cee074f14b0a1dd55d33423db6dc7ed897b3529d
+peers/6454.T_balance_sheet.csv,yfinance 1.7.0: 6454.T balance_sheet,2026-10-29T14:28:09+00:00,35fd3da576ce037cd4b1c63471f4a6d84e69a862d4efcedc99b7f5577ef8bcb9
+peers/6454.T_cashflow.csv,yfinance 1.7.0: 6454.T cashflow,2026-10-29T14:28:09+00:00,1ad3cdca8ca713b341603569f36f828e93c5d13c5af6f9d448ec2aba6f3bda4b
+peers/6454.T_income_stmt.csv,yfinance 1.7.0: 6454.T income_stmt,2026-10-29T14:28:09+00:00,40827c7db58770b7b35156ba84a8fea25eb11524b5782d900d1f1fe7161e1540
+peers/6454.T_info.json,yfinance 1.7.0: 6454.T info,2026-10-29T14:28:08+00:00,e4b18762a8f87e5776f5ec74b689db32a94ab6c88a9d6d225498839fd228c1b2
+peers/6454.T_prices_daily.csv,"yfinance 1.7.0: 6454.T history(10y, auto_adjust=False)",2026-10-29T14:28:08+00:00,7abe6f1b7a0493a657a86971b92ef49f083a4f86e4f31378bab7d934e889443c
+peers/6454.T_quarterly_balance_sheet.csv,yfinance 1.7.0: 6454.T quarterly_balance_sheet,2026-10-29T14:28:10+00:00,1c76f3ab56fa29c573ccd7f0e7e23a833e7e7193d29a5fde8a1b0a7049550e74
+peers/6454.T_quarterly_income_stmt.csv,yfinance 1.7.0: 6454.T quarterly_income_stmt,2026-10-29T14:28:09+00:00,72546e4506a8ea8152c0e94602b311bb43e91f8c3014d7f8e18aceff5e0fad16
+peers/HUSQ-B.ST_balance_sheet.csv,yfinance 1.7.0: HUSQ-B.ST balance_sheet,2026-10-29T14:28:05+00:00,30f7656814c80e598f671494d3307ad09bc0a5a7c1604cbcfd0825e12b59c9c6
+peers/HUSQ-B.ST_cashflow.csv,yfinance 1.7.0: HUSQ-B.ST cashflow,2026-10-29T14:28:05+00:00,110307603bf8db849f412f47314b31cb3db2531cd20b251d84edbb70dcb58bdf
+peers/HUSQ-B.ST_income_stmt.csv,yfinance 1.7.0: HUSQ-B.ST income_stmt,2026-10-29T14:28:05+00:00,c5dcf5d381f388920a994af4007d7a679ff1177845f67f84edec5ace0c656f68
+peers/HUSQ-B.ST_info.json,yfinance 1.7.0: HUSQ-B.ST info,2026-10-29T14:28:04+00:00,aef92de2d42be02daf19f650b1e8de1b30896fe3b3b844ece1637832572aa60b
+peers/HUSQ-B.ST_prices_daily.csv,"yfinance 1.7.0: HUSQ-B.ST history(10y, auto_adjust=False)",2026-10-29T14:28:04+00:00,80dabfa27e15c0b9f23e9b8edeb2db0967ee56b0a660fda4f7f1082bbe2a0bf9
+peers/HUSQ-B.ST_quarterly_balance_sheet.csv,yfinance 1.7.0: HUSQ-B.ST quarterly_balance_sheet,2026-10-29T14:28:06+00:00,36603b0f4079bc39ce37f599cec031d062ab4afbb495420b0d09b809446d2970
+peers/HUSQ-B.ST_quarterly_cashflow.csv,yfinance 1.7.0: HUSQ-B.ST quarterly_cashflow,2026-10-29T14:28:06+00:00,f8bf261e18e25df6841d84273d34e94a89ae507e9f6826369daa7d746cd6eaab
+peers/HUSQ-B.ST_quarterly_income_stmt.csv,yfinance 1.7.0: HUSQ-B.ST quarterly_income_stmt,2026-10-29T14:28:06+00:00,2e8e99fda12fe66ca8a9e6fa2ec78ed2d252d8303a5a4263529b3930db0e7f5c
+peers/SWK_balance_sheet.csv,yfinance 1.7.0: SWK balance_sheet,2026-10-29T14:27:58+00:00,e38de4321fb38f905e64b788cbab083cc1cd5c6d6def0b7d0e331a76c1013ab3
+peers/SWK_cashflow.csv,yfinance 1.7.0: SWK cashflow,2026-10-29T14:27:58+00:00,121cfc50e0418f761a7c3c68a2093c964a4bfdd5fc3362970597ecac318a90d3
+peers/SWK_income_stmt.csv,yfinance 1.7.0: SWK income_stmt,2026-10-29T14:27:58+00:00,f7507998eb9eca28b730ce8cf2aae9e54fee843ea61b51596cd0791fa4b019de
+peers/SWK_info.json,yfinance 1.7.0: SWK info,2026-10-29T14:27:57+00:00,028b74c0876746347e5899c1c8797dbd9ed10ad5af7856a55af50b08e2d454c4
+peers/SWK_prices_daily.csv,"yfinance 1.7.0: SWK history(10y, auto_adjust=False)",2026-10-29T14:27:57+00:00,359c05c6b134cbd814611273d8eed08e51d810980846e9395420d0cf657a8c6c
+peers/SWK_quarterly_balance_sheet.csv,yfinance 1.7.0: SWK quarterly_balance_sheet,2026-10-29T14:27:59+00:00,ba763e5252f3bc43ecbe9fad5697c64b77d29aadce07210c83078397d5d84b45
+peers/SWK_quarterly_cashflow.csv,yfinance 1.7.0: SWK quarterly_cashflow,2026-10-29T14:27:59+00:00,3462b53fc0c39243d25f9c608fa2b26a2be4c660b15dec4f4fa4e89ce0ef796b
+peers/SWK_quarterly_income_stmt.csv,yfinance 1.7.0: SWK quarterly_income_stmt,2026-10-29T14:27:58+00:00,58878d7d0443d37c4c0a007b29e8fec1e93eaa62817d4b3bd1506528757f3ee5
+peers/TTC_balance_sheet.csv,yfinance 1.7.0: TTC balance_sheet,2026-10-29T14:28:17+00:00,0410e669f886b6dc8fdd3748a0c6af2c802eaee5313e642d6d80d480cebc65af
+peers/TTC_cashflow.csv,yfinance 1.7.0: TTC cashflow,2026-10-29T14:28:17+00:00,8a17f22af41ed048b8a2db34498150a07774a51cacdda9dfa6b6d5d447cc697d
+peers/TTC_income_stmt.csv,yfinance 1.7.0: TTC income_stmt,2026-10-29T14:28:17+00:00,cb53d33ea50f421360c2609635021a96902e5a4ca37f3fb4868609069d9e1bd7
+peers/TTC_info.json,yfinance 1.7.0: TTC info,2026-10-29T14:28:16+00:00,d8082bb69273d15384a09552eda4b4ad36a1b52f92dd2ad48e9c84bedc369598
+peers/TTC_prices_daily.csv,"yfinance 1.7.0: TTC history(10y, auto_adjust=False)",2026-10-29T14:28:16+00:00,4906c4ba99104c9fe34ab73adbbf87920884a3eec2e6b697aaf460528fa83e55
+peers/TTC_quarterly_balance_sheet.csv,yfinance 1.7.0: TTC quarterly_balance_sheet,2026-10-29T14:28:18+00:00,71c692acca53d8869251a050b707afacba2c28e76064c569c2764e76230d4938
+peers/TTC_quarterly_cashflow.csv,yfinance 1.7.0: TTC quarterly_cashflow,2026-10-29T14:28:18+00:00,2319b6bb6498ddf782ac159315587be05c07cd575570f78f5ee0912215c904d2
+peers/TTC_quarterly_income_stmt.csv,yfinance 1.7.0: TTC quarterly_income_stmt,2026-10-29T14:28:17+00:00,3a6bf794221c0adc8084411c1c51f0f12ed99f421b1cd62ec2e83b75bf40db6d
+sec/companyfacts_SWK.json,https://data.sec.gov/api/xbrl/companyfacts/CIK0000093556.json,2026-10-29T14:33:51+00:00,63a55694d2d46597c3e460e71c41164115e3b96dd585af6150863b099611b476
+sec/companyfacts_TTC.json,https://data.sec.gov/api/xbrl/companyfacts/CIK0000737758.json,2026-10-29T14:33:51+00:00,7172b97c5b02bcdb756361884215ff1dea80d6ac0f12f263d998fffb970bbef1

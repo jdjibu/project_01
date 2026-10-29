@@ -1,0 +1,298 @@
+check,fy,lhs,rhs,diff,pass
+BS: current assets = sum of lines,FY2017,433760.0,433760.0,0.0,True
+BS: non-current assets = sum of lines,FY2017,165793.0,165793.0,0.0,True
+BS: total assets = CA + NCA,FY2017,599553.0,599553.0,0.0,True
+BS: current liabilities = sum of lines,FY2017,75883.0,75883.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2017,15591.0,15591.0,0.0,True
+BS: total liabilities = CL + NCL,FY2017,91474.0,91474.0,0.0,True
+BS: parent equity = sum of components,FY2017,504239.0,504239.0,0.0,True
+BS: total equity = parent + NCI,FY2017,508079.0,508079.0,0.0,True
+BS: assets = liabilities + equity,FY2017,599553.0,599553.0,0.0,True
+BS: current assets = sum of lines,FY2018,479462.0,479462.0,0.0,True
+BS: non-current assets = sum of lines,FY2018,175379.0,175379.0,0.0,True
+BS: total assets = CA + NCA,FY2018,654841.0,654841.0,0.0,True
+BS: current liabilities = sum of lines,FY2018,81107.0,81107.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2018,15295.0,15295.0,0.0,True
+BS: total liabilities = CL + NCL,FY2018,96402.0,96402.0,0.0,True
+BS: parent equity = sum of components,FY2018,554046.0,554046.0,0.0,True
+BS: total equity = parent + NCI,FY2018,558439.0,558439.0,0.0,True
+BS: assets = liabilities + equity,FY2018,654841.0,654841.0,0.0,True
+BS: current assets = sum of lines,FY2019,493129.0,493129.0,0.0,True
+BS: non-current assets = sum of lines,FY2019,187121.0,187121.0,0.0,True
+BS: total assets = CA + NCA,FY2019,680250.0,680250.0,0.0,True
+BS: current liabilities = sum of lines,FY2019,90794.0,90794.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2019,12234.0,12234.0,0.0,True
+BS: total liabilities = CL + NCL,FY2019,103028.0,103028.0,0.0,True
+BS: parent equity = sum of components,FY2019,572748.0,572748.0,0.0,True
+BS: total equity = parent + NCI,FY2019,577222.0,577222.0,0.0,True
+BS: assets = liabilities + equity,FY2019,680250.0,680250.0,0.0,True
+BS: current assets = sum of lines,FY2020,460466.0,460466.0,0.0,True
+BS: non-current assets = sum of lines,FY2020,214098.0,214098.0,0.0,True
+BS: total assets = CA + NCA,FY2020,674564.0,674564.0,0.0,True
+BS: current liabilities = sum of lines,FY2020,79376.0,79376.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2020,19440.0,19440.0,0.0,True
+BS: total liabilities = CL + NCL,FY2020,98816.0,98816.0,0.0,True
+BS: parent equity = sum of components,FY2020,571275.0,571275.0,0.0,True
+BS: total equity = parent + NCI,FY2020,575748.0,575748.0,0.0,True
+BS: assets = liabilities + equity,FY2020,674564.0,674564.0,0.0,True
+BS: current assets = sum of lines,FY2021,540328.0,540328.0,0.0,True
+BS: non-current assets = sum of lines,FY2021,272550.0,272550.0,0.0,True
+BS: total assets = CA + NCA,FY2021,812878.0,812878.0,0.0,True
+BS: current liabilities = sum of lines,FY2021,121798.0,121798.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2021,27754.0,27754.0,0.0,True
+BS: total liabilities = CL + NCL,FY2021,149552.0,149552.0,0.0,True
+BS: parent equity = sum of components,FY2021,657855.0,657855.0,0.0,True
+BS: total equity = parent + NCI,FY2021,663326.0,663326.0,0.0,True
+BS: assets = liabilities + equity,FY2021,812878.0,812878.0,0.0,True
+BS: current assets = sum of lines,FY2022,684959.0,684959.0,0.0,True
+BS: non-current assets = sum of lines,FY2022,322538.0,322538.0,0.0,True
+BS: total assets = CA + NCA,FY2022,1007497.0,1007497.0,0.0,True
+BS: current liabilities = sum of lines,FY2022,224165.0,224165.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2022,30802.0,30802.0,0.0,True
+BS: total liabilities = CL + NCL,FY2022,254967.0,254967.0,0.0,True
+BS: parent equity = sum of components,FY2022,746344.0,746344.0,0.0,True
+BS: total equity = parent + NCI,FY2022,752530.0,752530.0,0.0,True
+BS: assets = liabilities + equity,FY2022,1007497.0,1007497.0,0.0,True
+BS: current assets = sum of lines,FY2023,753439.0,753439.0,0.0,True
+BS: non-current assets = sum of lines,FY2023,345912.0,345912.0,0.0,True
+BS: total assets = CA + NCA,FY2023,1099351.0,1099351.0,0.0,True
+BS: current liabilities = sum of lines,FY2023,291593.0,291593.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2023,32059.0,32059.0,0.0,True
+BS: total liabilities = CL + NCL,FY2023,323652.0,323652.0,0.0,True
+BS: parent equity = sum of components,FY2023,769247.0,769247.0,0.0,True
+BS: total equity = parent + NCI,FY2023,775699.0,775699.0,0.0,True
+BS: assets = liabilities + equity,FY2023,1099351.0,1099351.0,0.0,True
+BS: current assets = sum of lines,FY2024,693635.0,693635.0,0.0,True
+BS: non-current assets = sum of lines,FY2024,362173.0,362173.0,0.0,True
+BS: total assets = CA + NCA,FY2024,1055808.0,1055808.0,0.0,True
+BS: current liabilities = sum of lines,FY2024,145475.0,145475.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2024,35127.0,35127.0,0.0,True
+BS: total liabilities = CL + NCL,FY2024,180602.0,180602.0,0.0,True
+BS: parent equity = sum of components,FY2024,868156.0,868156.0,0.0,True
+BS: total equity = parent + NCI,FY2024,875206.0,875206.0,0.0,True
+BS: assets = liabilities + equity,FY2024,1055808.0,1055808.0,0.0,True
+BS: current assets = sum of lines,FY2025,756437.0,756438.0,-1.0,True
+BS: non-current assets = sum of lines,FY2025,350088.0,350088.0,0.0,True
+BS: total assets = CA + NCA,FY2025,1106525.0,1106525.0,0.0,True
+BS: current liabilities = sum of lines,FY2025,138998.0,138997.0,1.0,True
+BS: non-current liabilities = sum of lines,FY2025,35032.0,35032.0,0.0,True
+BS: total liabilities = CL + NCL,FY2025,174030.0,174030.0,0.0,True
+BS: parent equity = sum of components,FY2025,926005.0,926006.0,-1.0,True
+BS: total equity = parent + NCI,FY2025,932495.0,932495.0,0.0,True
+BS: assets = liabilities + equity,FY2025,1106525.0,1106525.0,0.0,True
+BS: current assets = sum of lines,FY2026,808192.0,808191.0,1.0,True
+BS: non-current assets = sum of lines,FY2026,372993.0,372994.0,-1.0,True
+BS: total assets = CA + NCA,FY2026,1181185.0,1181185.0,0.0,True
+BS: current liabilities = sum of lines,FY2026,138980.0,138980.0,0.0,True
+BS: non-current liabilities = sum of lines,FY2026,37664.0,37663.0,1.0,True
+BS: total liabilities = CL + NCL,FY2026,176644.0,176644.0,0.0,True
+BS: parent equity = sum of components,FY2026,997340.0,997340.0,0.0,True
+BS: total equity = parent + NCI,FY2026,1004541.0,1004541.0,0.0,True
+BS: assets = liabilities + equity,FY2026,1181185.0,1181185.0,0.0,True
+IS: gross profit = revenue + COGS,FY2018,175906.0,175906.0,0.0,True
+IS: operating profit = GP + SG&A,FY2018,80231.0,80231.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2018,79865.0,79865.0,0.0,True
+IS: profit = PBT + tax,FY2018,55459.0,55459.0,0.0,True
+IS: profit = parent + NCI,FY2018,55459.0,55459.0,0.0,True
+IS: gross profit = revenue + COGS,FY2019,177222.0,177222.0,0.0,True
+IS: operating profit = GP + SG&A,FY2019,78305.0,78305.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2019,79919.0,79919.0,0.0,True
+IS: profit = PBT + tax,FY2019,56191.0,56191.0,0.0,True
+IS: profit = parent + NCI,FY2019,56191.0,56191.0,0.0,True
+IS: gross profit = revenue + COGS,FY2020,168841.0,168841.0,0.0,True
+IS: operating profit = GP + SG&A,FY2020,64046.0,64046.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2020,66008.0,66008.0,0.0,True
+IS: profit = PBT + tax,FY2020,48051.0,48051.0,0.0,True
+IS: profit = parent + NCI,FY2020,48051.0,48051.0,0.0,True
+IS: gross profit = revenue + COGS,FY2021,203049.0,203049.0,0.0,True
+IS: operating profit = GP + SG&A,FY2021,88464.0,88464.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2021,87199.0,87199.0,0.0,True
+IS: profit = PBT + tax,FY2021,62684.0,62684.0,0.0,True
+IS: profit = parent + NCI,FY2021,62684.0,62684.0,0.0,True
+IS: gross profit = revenue + COGS,FY2022,228318.0,228318.0,0.0,True
+IS: operating profit = GP + SG&A,FY2022,91728.0,91728.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2022,92483.0,92483.0,0.0,True
+IS: profit = PBT + tax,FY2022,65337.0,65337.0,0.0,True
+IS: profit = parent + NCI,FY2022,65337.0,65337.0,0.0,True
+IS: gross profit = revenue + COGS,FY2023,188748.0,188748.0,0.0,True
+IS: operating profit = GP + SG&A,FY2023,28246.0,28246.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2023,23887.0,23887.0,0.0,True
+IS: profit = PBT + tax,FY2023,11571.0,11571.0,0.0,True
+IS: profit = parent + NCI,FY2023,11571.0,11571.0,0.0,True
+IS: gross profit = revenue + COGS,FY2024,223945.0,223945.0,0.0,True
+IS: operating profit = GP + SG&A,FY2024,66169.0,66169.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2024,64017.0,64017.0,0.0,True
+IS: profit = PBT + tax,FY2024,43615.0,43615.0,0.0,True
+IS: profit = parent + NCI,FY2024,43615.0,43615.0,0.0,True
+IS: gross profit = revenue + COGS,FY2025,271426.0,271426.0,0.0,True
+IS: operating profit = GP + SG&A,FY2025,107038.0,107038.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2025,108477.0,108477.0,0.0,True
+IS: profit = PBT + tax,FY2025,79203.0,79203.0,0.0,True
+IS: profit = parent + NCI,FY2025,79203.0,79203.0,0.0,True
+IS: gross profit = revenue + COGS,FY2026,283971.0,283970.0,1.0,True
+IS: operating profit = GP + SG&A,FY2026,104705.0,104705.0,0.0,True
+IS: PBT = OP + fin income + fin expense,FY2026,108017.0,108017.0,0.0,True
+IS: profit = PBT + tax,FY2026,79438.0,79438.0,0.0,True
+IS: profit = parent + NCI,FY2026,79438.0,79438.0,0.0,True
+CF: operating subtotal = sum of lines,FY2018,53515.0,53515.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2018,34191.0,34191.0,0.0,True
+CF: CFI = sum of lines,FY2018,-15708.0,-15708.0,0.0,True
+CF: CFF = sum of lines,FY2018,-17743.0,-17743.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2018,5139.0,5139.0,0.0,True
+CF: end cash = begin + change,FY2018,147320.0,147320.0,0.0,True
+CF->BS: end cash = BS cash,FY2018,147320.0,147320.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2018,142181.0,142181.0,0.0,True
+CF: profit line = IS profit,FY2018,55459.0,55459.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2018,15045.0,15045.0,0.0,True
+CF: operating subtotal = sum of lines,FY2019,46648.0,46648.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2019,23155.0,23155.0,0.0,True
+CF: CFI = sum of lines,FY2019,-15329.0,-15329.0,0.0,True
+CF: CFF = sum of lines,FY2019,-8231.0,-8231.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2019,-808.0,-808.0,0.0,True
+CF: end cash = begin + change,FY2019,146512.0,146512.0,0.0,True
+CF->BS: end cash = BS cash,FY2019,146512.0,146512.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2019,147320.0,147320.0,0.0,True
+CF: profit line = IS profit,FY2019,56191.0,56191.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2019,23867.0,23867.0,0.0,True
+CF: operating subtotal = sum of lines,FY2020,76201.0,76201.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2020,57310.0,57310.0,0.0,True
+CF: CFI = sum of lines,FY2020,-30506.0,-30506.0,0.0,True
+CF: CFF = sum of lines,FY2020,-22931.0,-22931.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2020,-3073.0,-3073.0,0.0,True
+CF: end cash = begin + change,FY2020,143439.0,143439.0,0.0,True
+CF->BS: end cash = BS cash,FY2020,143439.0,143439.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2020,146512.0,146512.0,0.0,True
+CF: profit line = IS profit,FY2020,48051.0,48051.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2020,44409.0,44409.0,0.0,True
+CF: operating subtotal = sum of lines,FY2021,79828.0,79828.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2021,64537.0,64537.0,0.0,True
+CF: CFI = sum of lines,FY2021,-42913.0,-42913.0,0.0,True
+CF: CFF = sum of lines,FY2021,-23036.0,-23036.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2021,5201.0,5201.0,0.0,True
+CF: end cash = begin + change,FY2021,148640.0,148640.0,0.0,True
+CF->BS: end cash = BS cash,FY2021,148640.0,148640.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2021,143439.0,143439.0,0.0,True
+CF: profit line = IS profit,FY2021,62684.0,62684.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2021,49855.0,49855.0,0.0,True
+CF: operating subtotal = sum of lines,FY2022,-76849.0,-76849.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2022,-103660.0,-103660.0,0.0,True
+CF: CFI = sum of lines,FY2022,-27891.0,-27891.0,0.0,True
+CF: CFF = sum of lines,FY2022,52626.0,52626.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2022,-77583.0,-77583.0,0.0,True
+CF: end cash = begin + change,FY2022,71057.0,71057.0,0.0,True
+CF->BS: end cash = BS cash,FY2022,71057.0,71057.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2022,148640.0,148640.0,0.0,True
+CF: profit line = IS profit,FY2022,65337.0,65337.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2022,59937.0,59937.0,0.0,True
+CF: operating subtotal = sum of lines,FY2023,76341.0,76341.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2023,44430.0,44430.0,0.0,True
+CF: CFI = sum of lines,FY2023,-37680.0,-37680.0,0.0,True
+CF: CFF = sum of lines,FY2023,80970.0,80970.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2023,91663.0,91663.0,0.0,True
+CF: end cash = begin + change,FY2023,162720.0,162720.0,0.0,True
+CF->BS: end cash = BS cash,FY2023,162720.0,162720.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2023,71057.0,71057.0,0.0,True
+CF: profit line = IS profit,FY2023,11571.0,11571.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2023,39088.0,39088.0,0.0,True
+CF: operating subtotal = sum of lines,FY2024,249794.0,249794.0,0.0,True
+CF: CFO = subtotal + interest/div/tax,FY2024,237086.0,237086.0,0.0,True
+CF: CFI = sum of lines,FY2024,-25619.0,-25619.0,0.0,True
+CF: CFF = sum of lines,FY2024,-191277.0,-191277.0,0.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2024,33925.0,33925.0,0.0,True
+CF: end cash = begin + change,FY2024,196645.0,196645.0,0.0,True
+CF->BS: end cash = BS cash,FY2024,196645.0,196645.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2024,162720.0,162720.0,0.0,True
+CF: profit line = IS profit,FY2024,43615.0,43615.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2024,17851.0,17851.0,0.0,True
+CF: operating subtotal = sum of lines,FY2025,145914.0,145913.0,1.0,True
+CF: CFO = subtotal + interest/div/tax,FY2025,129874.0,129874.0,0.0,True
+CF: CFI = sum of lines,FY2025,-37872.0,-37870.0,-2.0,True
+CF: CFF = sum of lines,FY2025,-33545.0,-33544.0,-1.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2025,56634.0,56633.0,1.0,True
+CF: end cash = begin + change,FY2025,253279.0,253279.0,0.0,True
+CF->BS: end cash = BS cash,FY2025,253279.0,253279.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2025,196645.0,196645.0,0.0,True
+CF: profit line = IS profit,FY2025,79203.0,79203.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2025,17594.0,17594.0,0.0,True
+CF: operating subtotal = sum of lines,FY2026,127710.0,127711.0,-1.0,True
+CF: CFO = subtotal + interest/div/tax,FY2026,102336.0,102336.0,0.0,True
+CF: CFI = sum of lines,FY2026,-17634.0,-17635.0,1.0,True
+CF: CFF = sum of lines,FY2026,-99167.0,-99168.0,1.0,True
+CF: net change = CFO + CFI + CFF + FX,FY2026,4106.0,4107.0,-1.0,True
+CF: end cash = begin + change,FY2026,257385.0,257385.0,0.0,True
+CF->BS: end cash = BS cash,FY2026,257385.0,257385.0,0.0,True
+CF->BS: begin cash = prior BS cash,FY2026,253279.0,253279.0,0.0,True
+CF: profit line = IS profit,FY2026,79438.0,79438.0,0.0,True
+Supp: disclosed capex = CF purchase of non-current assets,FY2026,21532.0,21532.0,0.0,True
+Segments: external revenue sums to consolidated,FY2018,477298.0,477298.0,0.0,True
+Segments: consolidated = IS revenue,FY2018,477298.0,477298.0,0.0,True
+Segments: OP sums to consolidated,FY2018,80231.0,80231.0,0.0,True
+Segments: consolidated OP = IS OP,FY2018,80231.0,80231.0,0.0,True
+Segments: external revenue sums to consolidated,FY2019,490578.0,490578.0,0.0,True
+Segments: consolidated = IS revenue,FY2019,490578.0,490578.0,0.0,True
+Segments: OP sums to consolidated,FY2019,78305.0,78305.0,0.0,True
+Segments: consolidated OP = IS OP,FY2019,78305.0,78305.0,0.0,True
+Segments: external revenue sums to consolidated,FY2020,492617.0,492617.0,0.0,True
+Segments: consolidated = IS revenue,FY2020,492617.0,492617.0,0.0,True
+Segments: OP sums to consolidated,FY2020,64046.0,64046.0,0.0,True
+Segments: consolidated OP = IS OP,FY2020,64046.0,64046.0,0.0,True
+Segments: external revenue sums to consolidated,FY2021,608331.0,608331.0,0.0,True
+Segments: consolidated = IS revenue,FY2021,608331.0,608331.0,0.0,True
+Segments: OP sums to consolidated,FY2021,88464.0,88464.0,0.0,True
+Segments: consolidated OP = IS OP,FY2021,88464.0,88464.0,0.0,True
+Segments: external revenue sums to consolidated,FY2022,739260.0,739260.0,0.0,True
+Segments: consolidated = IS revenue,FY2022,739260.0,739260.0,0.0,True
+Segments: OP sums to consolidated,FY2022,91728.0,91728.0,0.0,True
+Segments: consolidated OP = IS OP,FY2022,91728.0,91728.0,0.0,True
+Segments: external revenue sums to consolidated,FY2023,764702.0,764702.0,0.0,True
+Segments: consolidated = IS revenue,FY2023,764702.0,764702.0,0.0,True
+Segments: OP sums to consolidated,FY2023,28246.0,28246.0,0.0,True
+Segments: consolidated OP = IS OP,FY2023,28246.0,28246.0,0.0,True
+Segments: external revenue sums to consolidated,FY2024,741391.0,741391.0,0.0,True
+Segments: consolidated = IS revenue,FY2024,741391.0,741391.0,0.0,True
+Segments: OP sums to consolidated,FY2024,66169.0,66169.0,0.0,True
+Segments: consolidated OP = IS OP,FY2024,66169.0,66169.0,0.0,True
+Segments: external revenue sums to consolidated,FY2025,753130.0,753130.0,0.0,True
+Segments: consolidated = IS revenue,FY2025,753130.0,753130.0,0.0,True
+Segments: OP sums to consolidated,FY2025,107038.0,107038.0,0.0,True
+Segments: consolidated OP = IS OP,FY2025,107038.0,107038.0,0.0,True
+Segments: external revenue sums to consolidated,FY2026,777600.0,777600.0,0.0,True
+Segments: consolidated = IS revenue,FY2026,777600.0,777600.0,0.0,True
+Segments: OP sums to consolidated,FY2026,104705.0,104705.0,0.0,True
+Segments: consolidated OP = IS OP,FY2026,104705.0,104705.0,0.0,True
+Geo: regions sum to total,FY2018,477298.0,477298.0,0.0,True
+Geo: total = IS revenue,FY2018,477298.0,477298.0,0.0,True
+Geo: regions sum to total,FY2019,490578.0,490578.0,0.0,True
+Geo: total = IS revenue,FY2019,490578.0,490578.0,0.0,True
+Geo: regions sum to total,FY2020,492617.0,492617.0,0.0,True
+Geo: total = IS revenue,FY2020,492617.0,492617.0,0.0,True
+Geo: regions sum to total,FY2021,608331.0,608331.0,0.0,True
+Geo: total = IS revenue,FY2021,608331.0,608331.0,0.0,True
+Geo: regions sum to total,FY2022,739260.0,739260.0,0.0,True
+Geo: total = IS revenue,FY2022,739260.0,739260.0,0.0,True
+Geo: regions sum to total,FY2023,764702.0,764702.0,0.0,True
+Geo: total = IS revenue,FY2023,764702.0,764702.0,0.0,True
+Geo: regions sum to total,FY2024,741391.0,741391.0,0.0,True
+Geo: total = IS revenue,FY2024,741391.0,741391.0,0.0,True
+Geo: regions sum to total,FY2025,753131.0,753130.0,1.0,True
+Geo: total = IS revenue,FY2025,753130.0,753130.0,0.0,True
+Geo: regions sum to total,FY2026,777600.0,777600.0,0.0,True
+Geo: total = IS revenue,FY2026,777600.0,777600.0,0.0,True
+Product: categories sum to total,FY2018,477298.0,477298.0,0.0,True
+Product: total = IS revenue,FY2018,477298.0,477298.0,0.0,True
+Product: categories sum to total,FY2019,490578.0,490578.0,0.0,True
+Product: total = IS revenue,FY2019,490578.0,490578.0,0.0,True
+Product: categories sum to total,FY2020,492617.0,492617.0,0.0,True
+Product: total = IS revenue,FY2020,492617.0,492617.0,0.0,True
+Product: categories sum to total,FY2021,608331.0,608331.0,0.0,True
+Product: total = IS revenue,FY2021,608331.0,608331.0,0.0,True
+Product: categories sum to total,FY2022,739260.0,739260.0,0.0,True
+Product: total = IS revenue,FY2022,739260.0,739260.0,0.0,True
+Product: categories sum to total,FY2023,764702.0,764702.0,0.0,True
+Product: total = IS revenue,FY2023,764702.0,764702.0,0.0,True
+Product: categories sum to total,FY2024,741391.0,741391.0,0.0,True
+Product: total = IS revenue,FY2024,741391.0,741391.0,0.0,True
+Product: categories sum to total,FY2025,753130.0,753130.0,0.0,True
+Product: total = IS revenue,FY2025,753130.0,753130.0,0.0,True
+Product: categories sum to total,FY2026,777600.0,777600.0,0.0,True
+Product: total = IS revenue,FY2026,777600.0,777600.0,0.0,True

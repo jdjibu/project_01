@@ -1,6 +1,6 @@
 # Makita Corporation (6586 JP): Initiation of Coverage, Student Research Project
 
-> Status: **Phase 0 (plan) complete.** Data, model and report are built in later phases.
+> Status: **Phase 1 (data) complete.** Model and report are built in later phases.
 > This is a student research project, not investment advice.
 
 ## The question
@@ -31,7 +31,24 @@ SOURCES.md    every dataset: source URL, retrieval date, notes
 ```bash
 pip install -r requirements.txt
 ```
-Pipeline commands are added in Phase 1.
+Requires `pdftotext` (poppler-utils) for PDF parsing.
+
+```bash
+python src/pipeline.py            # download everything, then parse, check and clean
+```
+```bash
+python src/pipeline.py --offline  # rebuild data/clean from the committed data/raw only
+```
+
+| Script | Does |
+|---|---|
+| `src/fetch_data.py` | Downloads filings, prices, FX, JGB yields, Damodaran and SEC files into `data/raw`; logs `MANIFEST.csv` |
+| `src/parse_makita.py` | Parses Makita PDFs into tidy statements, segments, regions, product mix, supplementary data; flags restatements |
+| `src/check_clean.py` | 297 accounting integrity checks; fails loudly |
+| `src/clean_market.py` | Price snapshot, 52-week range, beta regressions, risk-free rate, Damodaran inputs, LTM bridge, peer table in JPY |
+| `src/crosscheck_peers.py` | Verifies yfinance peer data against SEC XBRL |
+
+Accounting changes and caveats: `data/clean/ACCOUNTING_NOTES.md`.
 
 ## Limitations
 To be completed in Phase 8.

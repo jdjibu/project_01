@@ -1,0 +1,129 @@
+fy,region,value,source,release_fy
+2018,Japan,82575.0,201903e.pdf,2019
+2019,Japan,92129.0,201903e.pdf,2019
+2018,Europe,202054.0,201903e.pdf,2019
+2019,Europe,213238.0,201903e.pdf,2019
+2018,North America,73873.0,201903e.pdf,2019
+2019,North America,72508.0,201903e.pdf,2019
+2018,Asia,44094.0,201903e.pdf,2019
+2019,Asia,40909.0,201903e.pdf,2019
+2018,Central & South America,27922.0,201903e.pdf,2019
+2019,Central & South America,27801.0,201903e.pdf,2019
+2018,Oceania,31284.0,201903e.pdf,2019
+2019,Oceania,30222.0,201903e.pdf,2019
+2018,Middle East & Africa,15496.0,201903e.pdf,2019
+2019,Middle East & Africa,13771.0,201903e.pdf,2019
+2018,Total,477298.0,201903e.pdf,2019
+2019,Total,490578.0,201903e.pdf,2019
+2019,Japan,92129.0,202003e.pdf,2020
+2020,Japan,100697.0,202003e.pdf,2020
+2019,Europe,213238.0,202003e.pdf,2020
+2020,Europe,216230.0,202003e.pdf,2020
+2019,North America,72508.0,202003e.pdf,2020
+2020,North America,72304.0,202003e.pdf,2020
+2019,Asia,40909.0,202003e.pdf,2020
+2020,Asia,38998.0,202003e.pdf,2020
+2019,Central & South America,27801.0,202003e.pdf,2020
+2020,Central & South America,26000.0,202003e.pdf,2020
+2019,Oceania,30222.0,202003e.pdf,2020
+2020,Oceania,28421.0,202003e.pdf,2020
+2019,Middle East & Africa,13771.0,202003e.pdf,2020
+2020,Middle East & Africa,9967.0,202003e.pdf,2020
+2019,Total,490578.0,202003e.pdf,2020
+2020,Total,492617.0,202003e.pdf,2020
+2020,Japan,100697.0,financial_results202103.pdf,2021
+2021,Japan,113048.0,financial_results202103.pdf,2021
+2020,Europe,216230.0,financial_results202103.pdf,2021
+2021,Europe,282725.0,financial_results202103.pdf,2021
+2020,North America,72304.0,financial_results202103.pdf,2021
+2021,North America,90945.0,financial_results202103.pdf,2021
+2020,Asia,38998.0,financial_results202103.pdf,2021
+2021,Asia,39331.0,financial_results202103.pdf,2021
+2020,Central & South America,26000.0,financial_results202103.pdf,2021
+2021,Central & South America,29403.0,financial_results202103.pdf,2021
+2020,Oceania,28421.0,financial_results202103.pdf,2021
+2021,Oceania,41304.0,financial_results202103.pdf,2021
+2020,Middle East & Africa,9967.0,financial_results202103.pdf,2021
+2021,Middle East & Africa,11575.0,financial_results202103.pdf,2021
+2020,Total,492617.0,financial_results202103.pdf,2021
+2021,Total,608331.0,financial_results202103.pdf,2021
+2021,Japan,113048.0,financial_results202203.pdf,2022
+2022,Japan,118050.0,financial_results202203.pdf,2022
+2021,Europe,282725.0,financial_results202203.pdf,2022
+2022,Europe,352470.0,financial_results202203.pdf,2022
+2021,North America,90945.0,financial_results202203.pdf,2022
+2022,North America,112248.0,financial_results202203.pdf,2022
+2021,Asia,39331.0,financial_results202203.pdf,2022
+2022,Asia,49196.0,financial_results202203.pdf,2022
+2021,Central & South America,29403.0,financial_results202203.pdf,2022
+2022,Central & South America,41765.0,financial_results202203.pdf,2022
+2021,Oceania,41304.0,financial_results202203.pdf,2022
+2022,Oceania,51579.0,financial_results202203.pdf,2022
+2021,Middle East & Africa,11575.0,financial_results202203.pdf,2022
+2022,Middle East & Africa,13952.0,financial_results202203.pdf,2022
+2021,Total,608331.0,financial_results202203.pdf,2022
+2022,Total,739260.0,financial_results202203.pdf,2022
+2022,Japan,118050.0,financial_results202303.pdf,2023
+2023,Japan,122978.0,financial_results202303.pdf,2023
+2022,Europe,352470.0,financial_results202303.pdf,2023
+2023,Europe,348994.0,financial_results202303.pdf,2023
+2022,North America,112248.0,financial_results202303.pdf,2023
+2023,North America,119064.0,financial_results202303.pdf,2023
+2022,Asia,49196.0,financial_results202303.pdf,2023
+2023,Asia,53276.0,financial_results202303.pdf,2023
+2022,Central & South America,41765.0,financial_results202303.pdf,2023
+2023,Central & South America,47256.0,financial_results202303.pdf,2023
+2022,Oceania,51579.0,financial_results202303.pdf,2023
+2023,Oceania,58593.0,financial_results202303.pdf,2023
+2022,Middle East & Africa,13952.0,financial_results202303.pdf,2023
+2023,Middle East & Africa,14541.0,financial_results202303.pdf,2023
+2022,Total,739260.0,financial_results202303.pdf,2023
+2023,Total,764702.0,financial_results202303.pdf,2023
+2023,Japan,122978.0,financial_results202403.pdf,2024
+2024,Japan,123222.0,financial_results202403.pdf,2024
+2023,Europe,348994.0,financial_results202403.pdf,2024
+2024,Europe,356491.0,financial_results202403.pdf,2024
+2023,North America,119064.0,financial_results202403.pdf,2024
+2024,North America,93677.0,financial_results202403.pdf,2024
+2023,Asia,53276.0,financial_results202403.pdf,2024
+2024,Asia,46133.0,financial_results202403.pdf,2024
+2023,Central & South America,47256.0,financial_results202403.pdf,2024
+2024,Central & South America,49697.0,financial_results202403.pdf,2024
+2023,Oceania,58593.0,financial_results202403.pdf,2024
+2024,Oceania,56340.0,financial_results202403.pdf,2024
+2023,Middle East & Africa,14541.0,financial_results202403.pdf,2024
+2024,Middle East & Africa,15831.0,financial_results202403.pdf,2024
+2023,Total,764702.0,financial_results202403.pdf,2024
+2024,Total,741391.0,financial_results202403.pdf,2024
+2024,Japan,123222.0,financial_results202503.pdf,2025
+2025,Japan,127168.0,financial_results202503.pdf,2025
+2024,Europe,356491.0,financial_results202503.pdf,2025
+2025,Europe,371798.0,financial_results202503.pdf,2025
+2024,North America,93677.0,financial_results202503.pdf,2025
+2025,North America,83919.0,financial_results202503.pdf,2025
+2024,Asia,46133.0,financial_results202503.pdf,2025
+2025,Asia,45031.0,financial_results202503.pdf,2025
+2024,Central & South America,49697.0,financial_results202503.pdf,2025
+2025,Central & South America,50687.0,financial_results202503.pdf,2025
+2024,Oceania,56340.0,financial_results202503.pdf,2025
+2025,Oceania,55802.0,financial_results202503.pdf,2025
+2024,Middle East & Africa,15831.0,financial_results202503.pdf,2025
+2025,Middle East & Africa,18726.0,financial_results202503.pdf,2025
+2024,Total,741391.0,financial_results202503.pdf,2025
+2025,Total,753130.0,financial_results202503.pdf,2025
+2025,Japan,127168.0,financial_results202603.pdf,2026
+2026,Japan,132136.0,financial_results202603.pdf,2026
+2025,Europe,371798.0,financial_results202603.pdf,2026
+2026,Europe,390110.0,financial_results202603.pdf,2026
+2025,North America,83919.0,financial_results202603.pdf,2026
+2026,North America,78662.0,financial_results202603.pdf,2026
+2025,Asia,45031.0,financial_results202603.pdf,2026
+2026,Asia,47730.0,financial_results202603.pdf,2026
+2025,Central & South America,50687.0,financial_results202603.pdf,2026
+2026,Central & South America,52986.0,financial_results202603.pdf,2026
+2025,Oceania,55802.0,financial_results202603.pdf,2026
+2026,Oceania,56651.0,financial_results202603.pdf,2026
+2025,Middle East & Africa,18726.0,financial_results202603.pdf,2026
+2026,Middle East & Africa,19325.0,financial_results202603.pdf,2026
+2025,Total,753130.0,financial_results202603.pdf,2026
+2026,Total,777600.0,financial_results202603.pdf,2026
