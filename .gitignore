@@ -7,3 +7,4 @@ __pycache__/
 
 # large integrated reports (100MB+): downloaded by src/fetch_data.py, not committed
 data/raw/makita/reports/
+src/__pycache__/

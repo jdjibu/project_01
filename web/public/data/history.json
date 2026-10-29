@@ -311,5 +311,16 @@
   22.15,
   22.84
  ],
+ "sga_pct": [
+  0.200451,
+  0.201634,
+  0.212731,
+  0.18836,
+  0.184766,
+  0.209888,
+  0.212811,
+  0.218273,
+  0.230538
+ ],
  "source": "Source: Makita Corporation earnings releases (IFRS), student analysis."
 }

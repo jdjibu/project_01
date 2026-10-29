@@ -229,6 +229,7 @@ def export_web(r, share, aftermarket):
          "metrics": {k: [None if pd.isna(v) else round(float(v), 6) for v in r.loc[k]] for k in keep},
          "region_share": {k: [round(float(v), 2) for v in share[k]] for k in ["Europe", "Japan", "North America"]},
          "aftermarket_share": [round(float(v), 2) for v in aftermarket.values],
+         "sga_pct": [round(float(v), 6) for v in r.loc["sga_pct"]],
          "source": SOURCE}
     (WEB / "history.json").write_text(json.dumps(d, indent=1))
 
