@@ -66,7 +66,7 @@ stand-alone market profitability. Even so, North America has run close to break-
 
 | Company | Latest FY sales | Notes | Source |
 |---|---|---|---|
-| Techtronic (Milwaukee, Ryobi) | US$15.3bn (2025) | Includes floorcare; Milwaukee +7.9% local currency | [TTI 2025 results](https://www.streetinsider.com/Press+Releases/Techtronic+Industries+Delivers+Solid+Performance+in+2025/26097305.html) |
+| Techtronic (Milwaukee, Ryobi) | US$15.3bn (2025) | Includes floorcare; Milwaukee +7.9% local currency | [TTI Annual Report 2025](https://www.ttigroup.com/sites/default/files/2026-03/ar2025.pdf) |
 | Stanley Black & Decker | US$15.1bn (2025) | Total company; includes engineered fastening | SEC XBRL 10-K (`peer_crosscheck.csv`) |
 | Hilti (private) | CHF 6.3bn (2025) | +1.9% local currency | [Hilti media release](https://www.hilti.group/content/hilti/CP/XX/en/company/media-relations/media-releases/2025-business-result.html) |
 | Bosch Power Tools (private division) | About EUR 5bn (2025) | 17,300 associates; about 80% outside Germany | [Bosch Media Service](https://www.bosch-presse.de/pressportal/de/en/personnel-changes-at-bosch-power-tools-254528.html) |
@@ -86,7 +86,7 @@ U.S. go-to-market and a later move into 40V high-power tools than TTI's MX Fuel 
 |---|---|---|
 | US$30-40bn power tools; US$40-50bn OPE | Makita's own estimate | Makita Report 2026 p.22 |
 | US$29.7bn (2025) | Power tools | [Straits Research](https://straitsresearch.com/report/power-tools-market) |
-| US$35.3bn (2025) | Power tools | [Persistence Market Research](https://www.persistencemarketresearch.com/market-research/power-tools-market.asp) |
+| US$36.6bn (2026E) | Power tools | [Persistence Market Research](https://www.persistencemarketresearch.com/market-research/power-tools-market.asp) |
 | US$46.8bn (2025) | Power tools | [Arizton](https://www.arizton.com/market-reports/power-tools-market) |
 | About 62% cordless share (2025) | Power tools | [Straits Research](https://straitsresearch.com/report/power-tools-market) |
 
@@ -138,5 +138,5 @@ FY2023) is below its own 15% target and has proved cyclical.
 | Choice | Main alternative | Why |
 |---|---|---|
 | Treat Makita as one business with geographic drivers | Model product lines (tools / OPE / parts) | Makita discloses product data only as finished goods vs parts; geography is where revenue and margin data exist |
-| Quote the market-size range, not one figure | Pick one research firm | Third-party estimates span US$30-77bn; Makita's own range is the most consistent with its disclosures |
+| Quote the market-size range, not one figure | Pick one research firm | Third-party estimates span US$30-47bn; Makita's own range is the most consistent with its disclosures |
 | Moat rated narrow, not wide | Wide (platform lock-in) | Margins are cyclical and below target; share loss to TTI in North America |

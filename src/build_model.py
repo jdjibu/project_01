@@ -157,7 +157,7 @@ TS = [
     ("lcg_eur", "Local-currency growth: Europe", "%", "pct",
      {"Base": [0.000, 0.025, 0.030, 0.030, 0.030], "Bull": [0.020, 0.045, 0.050, 0.050, 0.040],
       "Bear": [-0.030, -0.005, 0.015, 0.020, 0.020]},
-     "Implied LC growth FY2026 -1.6%, 1Q FY2027 about -2% (Drivers sheet). Base: flat FY27, then cordless/OPE-led recovery to ~3%"),
+     "Implied LC growth FY2026 -1.5%, 1Q FY2027 -1.8% (Drivers sheet; 1Q: +11.2% in JPY vs EUR +13.2%). Base: flat FY27, then cordless/OPE-led recovery to ~3%"),
     ("lcg_jpn", "Local-currency growth: Japan", "%", "pct",
      {"Base": [0.025, 0.020, 0.020, 0.020, 0.015], "Bull": [0.040, 0.035, 0.030, 0.030, 0.025],
       "Bear": [0.000, 0.000, 0.010, 0.010, 0.010]},

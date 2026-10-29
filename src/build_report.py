@@ -153,7 +153,7 @@ def build():
                   f"{pct(r('sga_pct', 'FY2018'))} to {pct(r('sga_pct'))} of sales. The 15% operating-margin target needs "
                   f"operating leverage that the current sales-force build-out works against.", bullet),
         P(f"<b>2. Growth is currency, not volume.</b> FY2026 revenue rose 3.2% in yen while Europe (50% of sales) fell "
-                  f"about 1.6% in local currency; 1Q FY2027 was +10.7% in yen and flat in local currency. North America has "
+                  f"about {abs(B['drivers']['eu_lc']['FY2026']) * 100:.1f}% in local currency; 1Q FY2027 was +10.7% in yen and flat in local currency. North America has "
                   f"run near break-even for nine years while TTI's Milwaukee grew 7.9% in 2025.", bullet),
         P(f"<b>3. The balance sheet is the lever, and it limits the downside.</b> Net cash plus investments of about "
                   f"JPY {bn(B['bridge'])}bn is {pct(B['bridge'] / mcap, 0)} of the market value. ROE of {pct(r('roe'))} against an "
@@ -296,7 +296,7 @@ def build():
         "share of revenue; depreciation from the PP&E roll-forward. Every assumption has a one-line justification in the "
         "Assumptions sheet of the model, with a Base / Bull / Bear switch.", body))
     a = [["Base case", "FY27E", "FY28E", "FY29E", "FY30E", "FY31E", "Justification"]]
-    asm = [("Europe LC growth", [0.0, 2.5, 3.0, 3.0, 3.0], "FY2026 LC -1.6%; recovery from FY2028"),
+    asm = [("Europe LC growth", [0.0, 2.5, 3.0, 3.0, 3.0], f"FY2026 LC {B['drivers']['eu_lc']['FY2026'] * 100:.1f}%; recovery from FY2028"),
            ("Japan LC growth", [2.5, 2.0, 2.0, 2.0, 1.5], "FY2026 +3.9%; housing starts falling"),
            ("North America LC growth", [3.0] * 5, "Rebound after tariff disruption; no share gain"),
            ("USD/JPY", [158.26, 157.82, 157.82, 157.82, 157.82], "1Q actual + spot, then spot held"),
