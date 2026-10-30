@@ -196,7 +196,14 @@ The only shadow: tooltip `0 12px 32px rgba(0,0,0,.45)`.
 
 ## 7. Animation & Interaction
 
-Easing: `--ease: cubic-bezier(.2,.7,.2,1)`. Durations: 300ms (hover), 900ms (reveals), 1600ms (hero sequence).
+Easing (custom curves; never `ease-in` on UI):
+- `--ease-out: cubic-bezier(.23,1,.32,1)`: enter, press, reveal
+- `--ease-in-out: cubic-bezier(.77,0,.175,1)`: things moving on screen (scenario pill, chart lines, foil sweep)
+- `--ease-drawer: cubic-bezier(.32,.72,0,1)`: mobile menu
+
+Durations: 120ms press, 125ms tooltip, 200ms hover/colour, 300ms pill/nav underline, 600ms scenario count, 800ms reveals.
+Only `transform`, `opacity`, `filter`, `clip-path` and `stroke-dashoffset` animate; never `all`, never layout properties.
+Hover effects sit behind `@media (hover: hover) and (pointer: fine)`. Every pressable element scales to .96-.98 on `:active`.
 
 | Category (L2 requirement) | Where | Implementation |
 |---|---|---|
@@ -205,7 +212,12 @@ Easing: `--ease: cubic-bezier(.2,.7,.2,1)`. Durations: 300ms (hover), 900ms (rev
 | Text: Body / label | Hero KPIs, valuation figures | Count-up from 0 with easing over 1.4s when first visible (tabular figures, no layout shift) |
 | Element | Primary CTAs | Magnetic pull up to 6px toward the cursor (rAF-throttled, `(hover:hover)` only) |
 | Component | Thesis bento, scenario switch, sensitivity heatmap | Spotlight cards (cursor-tracked radial light); scenario switch re-tweens every figure and chart |
-| Background | Hero | Slow ambient gold light: two radial gradients drifting via `background-position` (40s loop) + static SVG grain at 4% |
+| Background | Hero | Slow ambient gold light (40s drift) + SVG grain + a generated guilloche (banknote engraving: phase-shifted sine rings) that engraves in once on load, turns over 6 minutes and counter-parallaxes |
+| Component | Scenario control | One gold pill slides between Bear/Base/Bull (300ms ease-in-out); figures blur for 180ms and re-count in 600ms so the switch feels instant |
+| Element | Target price | Foil text: a gold gradient clipped to the numerals sweeps once on load |
+| Element | Cards, nav, downloads | Gold hairline draws across a card's top edge on hover; active nav section gets an underline that draws from the left; download arrows nudge up-right |
+| Charts | Line series | Paths draw in via `pathLength=1` + `stroke-dashoffset`, dots fade up after; bars grow from their baseline |
+| Element | Tooltip | Scales from .97 at the corner nearest the pointer, 125ms |
 
 Signature moments (one per screen at most): hero price-vs-TP gauge draws in; the marquee band of key figures;
 the football field bars grow from the price line; the heatmap lights the active WACC/g cell.
@@ -213,21 +225,15 @@ the football field bars grow from the price line; the heatmap lights the active 
 **Clever detail:** hover (or focus) any key number marked with a dotted underline and it shows where it came from,
 e.g. "FY3/2026 release, p.10" or "Model: DCF!D47". The site practises the project's rule that every number is traceable.
 
-**Scroll reveal:**
+**Scroll reveal:** opacity + 16px rise + 6px blur clearing, 800ms ease-out; siblings stagger 60ms (`--d`).
 ```css
-.reveal { opacity:0; transform:translateY(24px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
-.reveal.is-in { opacity:1; transform:none; }
+.reveal { opacity:0; transform:translateY(16px); filter:blur(6px); transition:opacity .8s var(--ease-out), transform .8s var(--ease-out), filter .8s var(--ease-out); transition-delay:var(--d,0ms); }
+.reveal.is-in { opacity:1; transform:none; filter:none; }
 ```
-**Parallax:** hero ambient layer moves at 0.15x scroll (transform only, rAF).
+**Parallax:** hero light moves at 0.15x scroll, guilloche at -0.08x (transform only, rAF).
 
-**Reduced motion:**
-```css
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation:none !important; transition:none !important; }
-  .reveal, .mask > span { opacity:1 !important; transform:none !important; }
-}
-```
-JS also checks `matchMedia('(prefers-reduced-motion: reduce)')` and skips count-ups, magnet and parallax.
+**Reduced motion:** fewer, gentler animations rather than none. Keyframe loops stop, movement is removed,
+opacity and colour fades stay (reveals become a 300ms fade). JS also skips count-ups, magnet and parallax.
 
 ## 8. Do's and Don'ts
 

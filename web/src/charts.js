@@ -10,8 +10,12 @@ export function showTip(evt, html) {
   const r = t.getBoundingClientRect();
   let x = evt.clientX + pad;
   let y = evt.clientY + pad;
-  if (x + r.width > window.innerWidth - 8) x = evt.clientX - r.width - pad;
-  if (y + r.height > window.innerHeight - 8) y = evt.clientY - r.height - pad;
+  const flipX = x + r.width > window.innerWidth - 8;
+  const flipY = y + r.height > window.innerHeight - 8;
+  if (flipX) x = evt.clientX - r.width - pad;
+  if (flipY) y = evt.clientY - r.height - pad;
+  // scale in from the corner nearest the pointer
+  t.style.setProperty('--tip-origin', `${flipY ? 'bottom' : 'top'} ${flipX ? 'right' : 'left'}`);
   t.style.left = `${Math.max(8, x)}px`;
   t.style.top = `${Math.max(8, y)}px`;
 }
@@ -89,7 +93,7 @@ export function lineChart(container, { labels, series, fmt, min, max, ref, ticks
   }
   series.forEach((s) => {
     const pts = s.values.map((v, i) => (v == null ? null : [X(i), Y(v)])).filter(Boolean);
-    el('path', { d: 'M' + pts.map((p) => p.join(',')).join('L'), class: `line ${s.cls.replace('s', 'l')}` }, g);
+    el('path', { d: 'M' + pts.map((p) => p.join(',')).join('L'), pathLength: 1, class: `line draw ${s.cls.replace('s', 'l')}` }, g);
     pts.forEach((p) => el('circle', { cx: p[0], cy: p[1], r: 3.5, class: `dot ${s.cls}` }, g));
     const last = pts[pts.length - 1];
     text(g, last[0] + 10, last[1] + 4, s.name);
