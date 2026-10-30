@@ -56,15 +56,18 @@ function countTo(node, to, f, dur = 1400) {
   requestAnimationFrame(step);
 }
 
-function renderScenario(val, name) {
+function renderScenario(val, name, dur) {
   const s = val[name];
-  $$('.seg button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.scen === name)));
+  $$('.seg button').forEach((b, i) => {
+    b.setAttribute('aria-pressed', String(b.dataset.scen === name));
+    if (b.dataset.scen === name) $('.seg').style.setProperty('--i', i);
+  });
   const badge = $('#ratingBadge');
   badge.textContent = s.rating;
   badge.className = `badge ${s.rating === 'BUY' ? 'badge--buy' : s.rating === 'SELL' ? 'badge--sell' : ''}`;
-  countTo($('[data-count="tp"]'), s.tp, fmt.int);
-  countTo($('[data-count="upside"]'), s.upside, fmt.pct);
-  countTo($('[data-count="tsr"]'), s.tsr, fmt.pct);
+  countTo($('[data-count="tp"]'), s.tp, fmt.int, dur);
+  countTo($('[data-count="upside"]'), s.upside, fmt.pct, dur);
+  countTo($('[data-count="tsr"]'), s.tsr, fmt.pct, dur);
   $$('[data-bind]').forEach((n) => {
     const k = n.dataset.bind;
     const v = k.includes('.') ? k.split('.').reduce((o, p) => o?.[p], val) : s[k];
@@ -77,6 +80,29 @@ function renderScenario(val, name) {
   gauge($('#gauge'), { low: m.low_52w, high: m.high_52w, price: s.price, tp: s.tp, min: lo, max: hi });
   $('#gauge').classList.add('is-drawn');
   renderDcf(val, name);
+}
+
+// ---------------------------------------------------------------- guilloche (banknote engraving)
+// Woven bands: each ring is r(t) = R + A sin(n t + phase); shifting the phase across a band makes the lattice.
+function ring(R, A, n, phase, steps = 720) {
+  let d = '';
+  for (let i = 0; i <= steps; i++) {
+    const t = (i / steps) * Math.PI * 2;
+    const r = R + A * Math.sin(n * t + phase);
+    d += `${i ? 'L' : 'M'}${(r * Math.cos(t)).toFixed(2)},${(r * Math.sin(t)).toFixed(2)}`;
+  }
+  return `${d}Z`;
+}
+function guilloche(node, bands) {
+  if (!node) return;
+  let paths = '';
+  let k = 0;
+  bands.forEach(([R, A, n, lines]) => {
+    for (let j = 0; j < lines; j++) {
+      paths += `<path pathLength="1" style="animation-delay:${k++ * 30}ms" d="${ring(R, A, n, (j / lines) * Math.PI * 2)}"/>`;
+    }
+  });
+  node.innerHTML = `<svg viewBox="-200 -200 400 400" aria-hidden="true">${paths}</svg>`;
 }
 
 // ---------------------------------------------------------------- marquee
@@ -254,17 +280,19 @@ function magnet() {
         const r = b.getBoundingClientRect();
         const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
         const dy = (e.clientY - (r.top + r.height / 2)) / r.height;
-        b.style.transform = `translate(${dx * 12}px, ${dy * 10}px)`;
+        b.style.setProperty('--tx', `${(dx * 12).toFixed(1)}px`);
+        b.style.setProperty('--ty', `${(dy * 10).toFixed(1)}px`);
         raf = 0;
       });
     });
-    b.addEventListener('pointerleave', () => { b.style.transform = ''; });
+    b.addEventListener('pointerleave', () => { b.style.removeProperty('--tx'); b.style.removeProperty('--ty'); });
   });
 }
 
 function navAndParallax() {
   const nav = $('#nav');
   const light = $('.hero__light');
+  const engr = $('.hero__guilloche');
   const links = $$('.nav__links a[href^="#"]');
   const sections = links.map((a) => $(a.getAttribute('href')));
   let ticking = false;
@@ -275,6 +303,7 @@ function navAndParallax() {
       const y = window.scrollY;
       nav.classList.toggle('is-scrolled', y > 24);
       if (!reduce && light) light.style.transform = `translate3d(0, ${y * 0.15}px, 0)`;
+      if (!reduce && engr) engr.style.transform = `translate3d(0, ${y * -0.08}px, 0)`;
       let cur = -1;
       sections.forEach((s, i) => { if (s && s.getBoundingClientRect().top < window.innerHeight * 0.4) cur = i; });
       links.forEach((a, i) => a.setAttribute('aria-current', String(i === cur)));
@@ -300,15 +329,19 @@ function copyEmail() {
   const b = $('#copyEmail');
   if (!b) return;
   const hint = b.querySelector('.copy__hint');
+  // blur out, swap the word, blur back in: reads as one label changing, not two swapping
+  const swap = (word) => {
+    hint.classList.add('is-swapping');
+    setTimeout(() => { hint.textContent = word; hint.classList.remove('is-swapping'); }, 150);
+  };
+  let t;
   b.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(b.dataset.email);
-      hint.textContent = 'Copied';
-    } catch {
-      hint.textContent = 'Select to copy';
-    }
+    let ok = true;
+    try { await navigator.clipboard.writeText(b.dataset.email); } catch { ok = false; }
+    swap(ok ? 'Copied' : 'Select to copy');
     b.classList.add('is-copied');
-    setTimeout(() => { hint.textContent = 'Copy'; b.classList.remove('is-copied'); }, 1800);
+    clearTimeout(t);
+    t = setTimeout(() => { swap('Copy'); b.classList.remove('is-copied'); }, 1800);
   });
 }
 
@@ -316,13 +349,24 @@ function copyEmail() {
 (async function main() {
   // hero title reveals immediately
   requestAnimationFrame(() => $('.hero__title').classList.add('is-in'));
+  // [radius, amplitude, petals, lines]
+  guilloche($('.hero__guilloche'), [[172, 14, 30, 18], [126, 18, 20, 18], [80, 14, 14, 14], [40, 9, 9, 10]]);
+  guilloche($('.contact__seal'), [[160, 16, 24, 14], [104, 18, 16, 12], [52, 12, 10, 10]]);
   const { hist, val, facts } = await load();
   bindFacts(facts);
   band(val, facts);
   tables(val);
   let scen = 'Base';
   renderScenario(val, scen);
-  $$('.seg button').forEach((b) => b.addEventListener('click', () => { scen = b.dataset.scen; renderScenario(val, scen); }));
+  const panel = $('.panel');
+  $$('.seg button').forEach((b) => b.addEventListener('click', () => {
+    if (b.dataset.scen === scen) return;
+    scen = b.dataset.scen;
+    // a user-triggered switch should feel instant: short count, blur bridges the figures
+    panel.classList.add('is-switching');
+    setTimeout(() => panel.classList.remove('is-switching'), 180);
+    renderScenario(val, scen, 600);
+  }));
   const draw = () => { drawHistory(hist); drawValuation(val); };
   draw();
   let t;
